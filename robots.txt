@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iamjbcom.github.io/matlas/sitemap.xml

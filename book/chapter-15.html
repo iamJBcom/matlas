@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>From Click to Cell — Matlas</title><meta content="Dividing the Last Kilometre" name="description"/><link href="../assets/book.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "From Click to Cell", "isPartOf": {"@type": "Book", "name": "Matlas: An Operational Map of Human Mars", "author": {"@type": "Person", "name": "JB Bullock"}}, "inLanguage": "en", "copyrightHolder": "JB Bullock", "copyrightYear": 2026, "creativeWorkStatus": "First Public Web Edition 1.0 · October 2026"}</script><link rel="canonical" href="https://iamjbcom.github.io/matlas/book/chapter-15.html"/><meta property="og:url" content="https://iamjbcom.github.io/matlas/book/chapter-15.html"/><meta property="og:type" content="article"/></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="top"><a class="brand" href="index.html">MATLAS</a><span class="preview-pill">FIRST PUBLIC WEB EDITION</span><span class="minor">Operating Architecture · JB Bullock</span></header><div class="layout"><nav aria-label="Mobile book contents" class="mobile-chapters"><details><summary>Contents — jump to a chapter</summary><nav aria-label="Chapters, mobile menu" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="page" class="toc-item selected" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></details></nav><aside class="sidebar"><nav aria-label="Book chapters" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="page" class="toc-item selected" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></aside><main class="main" id="content"><article class="article"><div class="eyebrow">Chapter 15 · Part 4</div><h1>From Click to Cell</h1><p class="dek">Dividing the Last Kilometre</p><div class="prose"><p>At the end of Chapter 14, we had reduced the problem to one Click.</p>
+<p>That was deliberate. GRID had already done the difficult planetary work: fixed the reference geography, handled the changing behaviour of longitude, resolved the poles and given every location on Mars a persistent hierarchy from Quad down to kilometre-scale Click. Bar does not need to solve any of those problems again.</p>
+<p>It receives a Click and asks a much smaller question: how do we divide this piece of Mars until the remaining area is useful as an address?</p>
+<p>The answer is surprisingly simple. Divide once, then divide the result once more.</p>
+<h2>Two steps below Click</h2><figure aria-label="Figure 16: Click → Court → Cell" class="book-figure" id="figure-16"><img alt="Two-stage 16-by-16 subdivision of a Click into Courts and Cells, shown for regular and polar terrain." aria-describedby="figure-16-description" decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/image8.webp" width="1200"/><figcaption><span class="figure-id">Figure 16</span> · Click → Court → Cell</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p id="figure-16-description">Every Click is split into a 16-row-by-16-column Court lattice, and each Court into a 16-by-16 Cell lattice. That produces 256 Courts and 65,536 Cells per Click. Polar Clicks are divided within their inherited P1 angular bounds.</p></details></figure>
+<p>Every GRID Click is first divided into a <strong>16 × 16 array</strong>, producing <strong>256 Courts</strong>. Each Court is then divided in exactly the same way: another <strong>16 × 16 array</strong>, producing <strong>256 Cells within each Court</strong>.</p>
+<p>So one Click contains:</p>
+<p><strong>256 Courts</strong></p>
+<p>and:</p>
+<p><strong>256 × 256 = 65,536 Cells</strong></p>
+<p>The hierarchy therefore becomes:</p>
+<p><strong>Click → Court → Cell</strong></p>
+<p>That is the entire geometric machinery of Bar.</p>
+<p>There is a temptation, after the work required to design GRID, to expect something more exotic. There is none. Once GRID has established the correct parent area, the fine-address problem does not benefit from further planetary cleverness.</p>
+<p>A Court is simply one sixteenth of its parent Click in each dimension. A Cell is one sixteenth of its parent Court in each dimension. Equivalently, every Click contains a <strong>256 × 256 fine grid</strong>.</p>
+<p>The apparent simplicity is useful. This is a layer that may eventually sit inside emergency software, logistics systems, maintenance records, autonomous vehicles and ordinary mapping applications. The less unnecessary geometry they have to carry, the better.</p>
+<h2>Why sixteen?</h2>
+<p>Sixteen earns its place for several reasons at once.</p>
+<p>First, it produces the right physical scale. A regular equatorial GRID Click is approximately one kilometre across. Dividing that by sixteen gives a Court roughly sixty metres across; dividing by sixteen again gives a Cell roughly four metres across.</p>
+<p>Those are useful orders of magnitude. A Court is large enough to behave like a small site, forecourt, building footprint or operational patch of ground. A Cell is small enough to distinguish one entrance from another, a vehicle from the yard around it, or a casualty from the general area in which the emergency occurred.</p>
+<p>The dimensions vary with latitude because the parent Click varies. Bar does not pretend otherwise. Its promise is not that every Cell on Mars contains exactly the same number of square metres; its promise is that every Cell is produced by the same deterministic subdivision of whatever Click GRID has already defined.</p>
+<p>Second, sixteen is computationally convenient. Each row or column position requires four bits because four binary digits represent sixteen possibilities. A Court therefore has a four-bit row and a four-bit column, and a Cell inside that Court has the same structure again.</p>
+<p>The geometry and the machine representation fit one another naturally. That will matter more in the next chapter.</p>
+<p>Third, two stages of sixteen create exactly 256 subdivisions in each direction across the Click. That gives the fine layer enough resolution without forcing another stack of named geographic levels onto the reader.</p>
+<p>We could have built four levels of four, or eight followed by thirty-two, or several other mathematically valid arrangements. They would reach similar capacities while creating more structure to remember and more opportunities for the hierarchy to become the point.</p>
+<p>Two identical steps are easier to explain, easier to implement and easier to test.</p>
+<p><strong>Court and Cell are enough.</strong></p>
+<h2>Court is useful, but it is not another Province</h2>
+<p>The Court deserves a little care because its role can easily be misunderstood.</p>
+<p>A Province, Sector, Tile or Click is part of GRID's civil hierarchy. Those levels exist because Mars benefits from persistent reference areas at several geographically meaningful scales.</p>
+<p>A Court is different. It is part of the address mechanism below Click.</p>
+<p>That distinction matters because Matlas should not encourage future settlements to organise themselves around sixty-metre squares merely because the protocol happens to contain them. A Court does not prescribe the dimensions of a building plot, street block, habitat module, lease or public space.</p>
+<p>Real development can ignore Court boundaries completely. A large habitat may occupy several Courts. Several small structures may fit inside one. A roadway may cross them diagonally. A utility compound can begin halfway through one Court and finish halfway through another.</p>
+<p>Bar does not care.</p>
+<p>The Court is useful because it breaks the final kilometre into manageable pieces, provides an intermediate machine and human reference, and supports the way the three-word interface will later distinguish Court-level from Cell-level addresses.</p>
+<p>It is an addressing level, not a planning doctrine. That is why the name sits below Click rather than beside Province or Sector in the larger geography.</p>
+<h2>Row and column</h2>
+<p>Inside a Click, Courts are indexed by row and column.</p>
+<p>There are sixteen of each:</p>
+<p><strong>Court row: 0–15</strong></p>
+<p><strong>Court column: 0–15</strong></p>
+<p>Rows follow the same broad orientation used elsewhere in Matlas: from the equatorward edge towards the poleward edge. Columns increase eastward.</p>
+<p>A Court can therefore be represented as a pair:</p>
+<p><strong>(Court row, Court column)</strong></p>
+<p>Inside that Court, Cells use another pair:</p>
+<p><strong>Cell row: 0–15</strong></p>
+<p><strong>Cell column: 0–15</strong></p>
+<p>The full fine location inside a Click can therefore be represented by four small values:</p>
+<p><strong>Court row, Court column, Cell row, Cell column</strong></p>
+<p>There is another way to see exactly the same geometry. Combine the two row values:</p>
+<p><strong>fine row = 16 × Court row + Cell row</strong></p>
+<p>and combine the two column values:</p>
+<p><strong>fine column = 16 × Court column + Cell column</strong></p>
+<p>Each resulting value runs from 0 to 255.</p>
+<p>So:</p>
+<p><strong>two nested 16 × 16 grids</strong></p>
+<p>and:</p>
+<p><strong>one 256 × 256 grid</strong></p>
+<p>are simply two views of the same structure.</p>
+<p>The nested view is useful to people because Court provides an intermediate scale. The 256 × 256 view is useful to software because it describes the final fine position directly.</p>
+<p>Nothing physical changes between the two.</p>
+<h2>What a Cell means physically</h2>
+<p>Near the equator, the north–south dimension of a regular Click is just under one kilometre. A Court is therefore about sixty metres in that direction and a Cell about four metres.</p>
+<p>The east–west dimension starts at a similar scale near the equator and decreases as longitude lines converge. Regular GRID accepts that change until 72°, and Bar inherits it. A Cell at higher regular latitude will therefore be narrower east–west than an equatorial Cell.</p>
+<p>That is not a defect accidentally introduced by Bar. It is the physical consequence of the angular GRID architecture chosen earlier.</p>
+<p>Above 72°, P1 has already begun adapting the longitude width of the Clicks so that they do not collapse into increasingly thin strips. Bar simply divides those adapted Clicks.</p>
+<p>The practical result is what matters: through the overwhelming majority of Mars, a Bar Cell remains a <strong>few-metre patch of surface</strong>.</p>
+<p>It is intentionally approximate as a physical description and exact as an address definition. The protocol can determine precisely which Cell owns a coordinate without claiming that every Cell contains precisely sixteen square metres.</p>
+<p>Those are different claims.</p>
+<h2>Do not redraw the poles</h2>
+<p>The polar regions offer a useful test of whether the architecture has stayed disciplined.</p>
+<p>We could design a special polar version of Bar. There would be no shortage of mathematical justifications: meridians converge, GRID branching changes, exact apex behaviour needs care and polar Clicks do not all share the same east–west dimensions. A suitably enthusiastic designer could probably create several pages of new polar subdivision rules before lunch.</p>
+<p>That would be the wrong response.</p>
+<p>GRID already owns the planetary geometry. By the time Bar receives a polar Click, P1 has determined that Click's exact boundaries. It does not matter whether the parent came from Regular GRID or from adaptive polar branching: Bar sees one valid parent area and divides it sixteen ways in each local angular dimension, then does so again.</p>
+<p>This is an important architectural rule:</p>
+<p><strong>GRID decides the shape of the Click. Bar divides the Click it receives.</strong></p>
+<p>The consequence is that there is no separate Polar Bar, no second addressing grammar and no need for users to learn a different fine-location system when they cross 72°.</p>
+<p>The complexity remains where it belongs.</p>
+<h2>The apex</h2>
+<p>The exact geographic pole is the one place where even an adapted Click meets a genuine topological oddity. Longitude no longer distinguishes positions at the point itself because every meridian has arrived at the same place.</p>
+<p>GRID already resolves that ambiguity through a canonical apex lineage. Alternative longitude representations of the exact pole do not create multiple GRID locations, and Bar inherits the same principle.</p>
+<p>The exact pole belongs to one canonical fine lineage inside the canonical apex Click. Different longitude values supplied for the same physical pole must not generate different Courts or Cells. Everywhere infinitesimally away from the pole, ordinary subdivision works again.</p>
+<p>This may seem like disproportionate attention to two points on a planet containing nearly thirteen trillion Bar Cells. It is also exactly the kind of point where supposedly deterministic global systems discover whether the word <em>global</em> was being used enthusiastically or literally.</p>
+<p>Matlas uses it literally.</p>
+<h2>Boundary rules all the way down</h2>
+<p>Edges create a more common version of the same problem.</p>
+<p>Suppose a coordinate lies exactly on the boundary between two Courts. Saying “either is close enough” would work for a sketch; it does not work for an address protocol.</p>
+<p>Bar therefore inherits the same ownership philosophy used by GRID. For east–west subdivision, intervals are west-inclusive and east-exclusive, so an exact internal boundary belongs to the Court or Cell immediately to the east. For the latitude direction, the equivalent rule assigns exact internal boundaries poleward.</p>
+<p>The consequence is that every point inside the parent Click receives exactly one Court and exactly one Cell.</p>
+<p>No point belongs to two, and no point belongs to none.</p>
+<p>That sounds obvious because well-designed spatial systems make it look obvious. It is still something the specification has to say, because a location system becomes unreliable remarkably quickly if two otherwise competent implementations can disagree about which side owns the line.</p>
+<h2>Containment matters more than shape</h2>
+<p>There is a broader principle underneath these rules.</p>
+<p>Bar does not require all Cells to have the same area, the same aspect ratio or the same physical dimensions. It requires <strong>exact containment</strong>.</p>
+<p>Every Cell belongs to one Court. Every Court belongs to one Click. Every Click already belongs to one Tile, Sector, Province, Zand and Quad.</p>
+<p>That chain cannot break.</p>
+<p>This gives fine addresses something raw coordinate pairs do not naturally provide: immediate membership in a persistent operating hierarchy. A maintenance record attached to one Cell can be aggregated to its Court if useful, then to its Click, Tile or Sector. An emergency system can receive a few-metre location and instantly recover broader geographic context. A regional planning application can ignore the Bar detail completely and work at GRID level without the underlying address becoming incompatible.</p>
+<p>The fine location is not a second geography floating beneath the first.</p>
+<p>It is nested inside it.</p>
+<h2>The scale can be understood without memorising metres</h2>
+<p>There is another reason not to make exact physical dimensions the main way people understand Bar.</p>
+<p>The address hierarchy itself already provides useful intuition:</p>
+<p><strong>Click</strong> means approximately the kilometre scale.</p>
+<p><strong>Court</strong> means roughly the tens-of-metres scale.</p>
+<p><strong>Cell</strong> means roughly the few-metres scale.</p>
+<p>That is enough for most human reasoning. If someone says that an incident has been localised only to the Click, the search area is still substantial. If they have the Court, the team is probably dealing with a site-sized patch. If they have the Cell, they are effectively at the destination and should now use whatever local sensing or visual information the task requires.</p>
+<p>The hierarchy therefore communicates confidence as well as scale, without pretending that Mars has somehow agreed to make every kilometre, Court or Cell physically identical.</p>
+<h2>A worked Click</h2>
+<p>Take a regular Click somewhere in the lower latitudes. For illustration, imagine that its physical dimensions are close enough to one kilometre north–south and east–west that we can use round numbers without insulting the geometry.</p>
+<p>Split it sixteen ways in each direction and each Court is roughly sixty metres across.</p>
+<p>Take Court row 6, column 11. That Court occupies one particular 1/16 × 1/16 portion of the Click. Divide it sixteen ways again and choose Cell row 3, column 12.</p>
+<p>The final Cell is roughly four metres across.</p>
+<p>Nothing in that example required a database of every Cell on Mars. We needed only:</p>
+<p>the parent Click;</p>
+<p>the Bar subdivision rule;</p>
+<p>four small indices.</p>
+<p>The same rule works for the next Click and the next one after that. It works on uninhabited ground, inside a future city and, because the parent geometry comes from GRID, when the Click is polar as well.</p>
+<p>This is the advantage of deriving fine locations rather than cataloguing them.</p>
+<h2>Twelve trillion locations without twelve trillion records</h2>
+<p>The scale of the resulting system sounds slightly absurd when written out.</p>
+<p>GRID contains <strong>193,557,552 Clicks</strong>.</p>
+<p>Each contains <strong>65,536 Bar Cells</strong>.</p>
+<p>That gives:</p>
+<p><strong>12,684,987,727,872 Cells</strong></p>
+<p>across Mars — nearly <strong>12.7 trillion</strong> possible few-metre addresses.</p>
+<p>The important point is not the size of the number. It is that we do <strong>not</strong> need a twelve-trillion-row table.</p>
+<p>The locations exist because the rules exist. Given a coordinate, a conforming implementation can determine the containing Click, Court and Cell; given the address components, it can reconstruct the corresponding bounds.</p>
+<p>No global catalogue has to be downloaded before the system becomes useful.</p>
+<p>This is one of those cases where the difference between an algorithm and a database becomes infrastructure.</p>
+<p><strong>The database can be enormous. The rule can remain small.</strong></p>
+<h2>Why the hierarchy stops again</h2>
+<p>We could subdivide Cell. Nothing mathematical prevents it.</p>
+<p>Another 16 × 16 layer would move the system toward decimetre scale. Repeat the exercise and we could pursue centimetres. The only real limit would be how long we were prepared to confuse an address with a measurement.</p>
+<p>Bar stops at Cell for the same reason GRID stops at Click: the architecture has reached the end of the job it was designed to perform.</p>
+<p>A few metres is enough to identify the civil destination. Below that, local systems are usually better.</p>
+<p>A rover docking with a charger should use its navigation sensors. A robot arm should use its own reference frame. A surveyor should use proper measurements. A hospital should locate rooms and beds using a building system appropriate to the building.</p>
+<p>Matlas does not become stronger by absorbing all of those jobs.</p>
+<p><strong>It becomes stronger by knowing when to stop.</strong></p>
+<h2>Geometry before identity</h2>
+<p>We now have the complete physical logic of Bar.</p>
+<p>Every GRID Click receives 256 Courts, and every Court receives 256 Cells. The resulting 65,536 Cells partition the Click completely and deterministically. The same rule works in Regular and Polar GRID because Bar inherits the parent geometry rather than reinventing it. Exact boundaries have one owner, and every fine location remains nested inside the GRID hierarchy above it.</p>
+<p>That gives us places.</p>
+<p>It does not yet give them compact identities.</p>
+<p>We could write a location as the entire GRID path followed by four small row-and-column values. It would work, but it would be a rather elaborate thing to carry around every time a logistics system wanted to say <em>this loading point</em>.</p>
+<p>The next design problem is therefore not geometry. It is representation.</p>
+<p>How do we take one of nearly thirteen trillion Cells and give it a machine identity that is compact, deterministic, reversible and still completely independent of a central registry?</p>
+<p>That is where binary becomes useful.</p>
+<p>Thinking effort5.6 High</p>
+<p>To pick up a draggable item, press the space bar. While dragging, use the arrow keys to move the item. Press space again to drop the item in its new position, or press escape to cancel.</p>
+<p>To pick up a draggable item, press the space bar. While dragging, use the arrow keys to move the item. Press space again to drop the item in its new position, or press escape to cancel.</p></div><nav aria-label="Reading order" class="next-prev"><a href="chapter-14.html">← A Kilometre Is Not an Address</a><a href="chapter-16.html">A Place in 44 Bits →</a></nav></article></main></div><footer class="imprint">© JB Bullock 2026. All rights reserved. Book text and artwork are not licensed under the technical specification or software licences. · <a href="index.html">Book contents</a></footer></body></html>

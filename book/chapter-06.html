@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Start With the Planet — Matlas</title><meta content="Coverage Without Territory" name="description"/><link href="../assets/book.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "Start With the Planet", "isPartOf": {"@type": "Book", "name": "Matlas: An Operational Map of Human Mars", "author": {"@type": "Person", "name": "JB Bullock"}}, "inLanguage": "en", "copyrightHolder": "JB Bullock", "copyrightYear": 2026, "creativeWorkStatus": "First Public Web Edition 1.0 · October 2026"}</script><link rel="canonical" href="https://iamjbcom.github.io/matlas/book/chapter-06.html"/><meta property="og:url" content="https://iamjbcom.github.io/matlas/book/chapter-06.html"/><meta property="og:type" content="article"/></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="top"><a class="brand" href="index.html">MATLAS</a><span class="preview-pill">FIRST PUBLIC WEB EDITION</span><span class="minor">Operating Architecture · JB Bullock</span></header><div class="layout"><nav aria-label="Mobile book contents" class="mobile-chapters"><details><summary>Contents — jump to a chapter</summary><nav aria-label="Chapters, mobile menu" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="page" class="toc-item selected" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></details></nav><aside class="sidebar"><nav aria-label="Book chapters" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="page" class="toc-item selected" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></aside><main class="main" id="content"><article class="article"><div class="eyebrow">Chapter 6 · Part 2</div><h1>Start With the Planet</h1><p class="dek">Coverage Without Territory</p><div class="prose"><p>The obvious way to build geography on an empty planet is to begin where the people are.</p>
+<p>Give the first settlement a useful local map. Let the next settlement create its own. Extend each system as roads, industrial sites and neighbouring communities appear, then connect them when the need becomes obvious. Most of Mars can remain untouched because, for the moment, almost nobody is doing anything there.</p>
+<p>There is a lot to like about this approach. It is restrained, responsive and leaves communities free to develop systems suited to their own circumstances. A mining settlement may organise its surroundings differently from a scientific base; a dense city will eventually need distinctions that make no sense around a remote fuel depot. There is no good reason to force every community to use the same streets, neighbourhoods or local names merely because they occupy the same planet.</p>
+<p>For local geography, I would encourage exactly that diversity.</p>
+<p>The question is what should sit underneath it:</p>
+<p><strong>Can you divide the whole planet without claiming the whole planet?</strong></p>
+<p>For founding Mars, I think the answer is yes — and that starting with the planet is the better design.</p>
+<h2>The inconvenient importance of empty Mars</h2>
+<p>Imagine two settlements eight hundred kilometres apart.</p>
+<p>Almost nobody lives between them. Yet a rover convoy crosses the terrain. A communications relay sits somewhere along the route. Scientific teams survey parts of it. Engineers compare future transport corridors, while emergency planners identify diversion points and shelters.</p>
+<p>The space between the settlements is empty in one sense and already useful in another.</p>
+<p>That distinction matters more on founding Mars than it does across most familiar terrestrial landscapes. Settlement may remain extremely sparse while science, transport, communications, autonomous systems and resource exploration range across very large distances. A piece of ground can become operationally important decades before it becomes inhabited, while some areas may matter precisely because nobody should build there.</p>
+<p>A settlement-first approach can cope with this for quite a while. Each community can extend its own geography outward along roads and operating routes, while latitude and longitude remain the common language between them. With two or three settlements and a handful of external sites, that may be all anybody needs.</p>
+<p>The difficulty arrives gradually.</p>
+<p>A third settlement appears halfway between the first two. What used to be peripheral ground becomes central to all three. Scientific datasets already refer to one set of local areas, infrastructure records to another, while the new settlement quite reasonably develops its own vocabulary and operational divisions. None of this is catastrophic; Earth survives thousands of such interfaces every day.</p>
+<p>But Mars has the unusual luxury of deciding whether to manufacture them first.</p>
+<p>A planet-first reference reverses the sequence. The common spatial identity exists before anyone knows where the tenth, hundredth or thousandth settlement will appear. Local geographies can still develop wherever they are useful, but future settlement does not require the underlying planet to be reorganised each time civilisation reaches somewhere new.</p>
+<p>The geography becomes useful before the population arrives.</p>
+<p>That is the first reason to start globally.</p>
+<h2>One common substrate</h2><figure aria-label="Figure 5: Settlement-First vs Planet-First" class="book-figure" id="figure-05"><img alt="Side-by-side comparison of settlement-first local systems and a planet-first common geographic substrate." aria-describedby="figure-5-description" decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/image23.webp" width="1200"/><figcaption><span class="figure-id">Figure 5</span> · Settlement-First vs Planet-First</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p id="figure-5-description">The left-hand pattern has independent geographic schemes extending outwards from settlements. The right-hand pattern starts with a common planet-wide reference while permitting local overlays and names.</p></details></figure>
+<p>There is also a familiar architectural problem hiding inside the map.</p>
+<p>If every settlement develops a completely independent spatial system, each eventually needs some way to interact with the others. A route beginning in Settlement A may cross areas defined by Organisation B before ending in Settlement C. Software needs conversion rules. Contracts inherit local identifiers. Historical data accumulates against boundaries that may mean little outside the institution that created them.</p>
+<p>As the number of systems increases, the number of possible interfaces increases with it.</p>
+<p>A common underlying layer changes the pattern. Each local system needs primarily to understand the shared reference beneath it rather than every other local system directly. The local geographies remain free to differ; what becomes common is only the physical substrate they refer back to.</p>
+<p>That distinction matters. A city can create its own street names. A mine can use a local engineering grid. A scientific institute can operate a specialised analytical system. A transport network can use route kilometre markers. None of them has to abandon the representation best suited to its work.</p>
+<p>They simply share an answer to the more primitive question: which piece of Mars is this?</p>
+<p>The same architecture can extend across terrain that nobody currently cares about. If spatial identity is generated by rule rather than individually assigned, covering an uninhabited region does not require administrators to visit it and issue certificates to the rocks. The system merely needs to be able to produce the same answer if somebody asks.</p>
+<p>That gives the common layer an attractive characteristic:</p>
+<p><strong>present everywhere, intrusive nowhere.</strong></p>
+<p>Every location can have an identity without every location needing a sign, a name, an office or a resident. Most Martians may never encounter the references attached to most of the planet, just as nobody needs to memorise the identifiers of every mapping tile or telephone number on Earth.</p>
+<p>Global underneath does not have to mean cluttered above.</p>
+<h2>Drawing lines without claiming land</h2>
+<p>The planet-first choice creates an immediate problem of appearance.</p>
+<p>Draw lines across Mars, colour the resulting areas and give them identifiers, and the map begins to resemble a political atlas. Humans have spent so long reading authority into coloured territories that a line across a map rarely remains visually innocent.</p>
+<p>So we need to be precise about what the lines mean.</p>
+<p>A reference boundary makes a narrow technical statement: a point on one side belongs to one reference unit; a point on the other belongs to another. That distinction lets software, maps, statistics and records refer consistently to pieces of the surface.</p>
+<p>A political border carries a much larger bundle of meaning involving jurisdiction, authority, law, history and legitimacy.</p>
+<p>The geometry can look identical.</p>
+<p>The semantics are completely different.</p>
+<p>We already accept this distinction elsewhere. Lines of latitude divide the planet without distributing sovereignty. Cartographic sheets have edges without acquiring governments. Survey grids classify land without automatically deciding who owns it.</p>
+<p>A Martian civil reference can operate the same way.</p>
+<p>Giving an area a persistent identifier does not award it to anyone. It does not declare a province, grant mineral rights or decide what future residents should call the place. It establishes a repeatable piece of spatial structure.</p>
+<p>This separation is not merely philosophical. If we build political geography into the common reference, we also import political instability into it. A settlement expands; two jurisdictions merge; a company disappears; an administrative region is redrawn. The reference system then has to move with the institution or preserve a label whose original meaning has become obsolete.</p>
+<p>Neither is attractive.</p>
+<p>The cleaner arrangement is to separate the layers from the beginning.</p>
+<p>Governments can design government geography. Property systems can define property. Science can define scientific areas. Transport can follow transport logic.</p>
+<p>The common reference identifies the ground beneath them.</p>
+<h2>Let reality cross the lines</h2>
+<p>The separation only works if everything above the base layer is free to ignore it.</p>
+<p>Imagine a settlement that begins largely inside one reference unit. Housing eventually expands eastwards, industry grows to the south and a transport terminal appears beyond both. The city now crosses several reference boundaries.</p>
+<p>Nothing needs repairing.</p>
+<p>The city has simply grown.</p>
+<p>The same principle applies to infrastructure. No competent engineer should bend a railway to remain politely inside one civil reference area. The route should follow terrain, gradients, destination demand, construction cost and the other things a railway actually cares about.</p>
+<p>Nature deserves the same freedom. A geological formation should cross the grid if geology crosses the grid. A hazard zone should follow the hazard. A suspected resource deposit will occupy whatever inconvenient shape Mars has supplied.</p>
+<p>Legal and institutional geography can behave likewise.</p>
+<p>At one moment, the same patch of ground might sit inside a settlement boundary, a utility service region, a scientific protection area, a lease and a political jurisdiction, while a buried power line crosses it and a geological map classifies it according to another geometry altogether. These layers are not competing to discover the single correct boundary; they represent different facts and different decisions.</p>
+<p>The common structure should therefore be deliberately thin.</p>
+<p>Its job is to remain stable while the real geography above it changes.</p>
+<p><strong>Persistent reference is not permanent territory.</strong></p>
+<p>That is the governing principle of this chapter.</p>
+<p>Persistence belongs to the reference, not to the political, legal or cultural arrangement placed over it. A future city may cross the line. A country may cross it. A lease almost certainly will. If those overlays later change, historical records still retain a stable description of the physical ground underneath.</p>
+<p>This is also why MR5 — Take no sides and MR6 — Accept overlays are inseparable.</p>
+<p>A reference system that claims political neutrality but forces future human geography to follow its boundaries would exercise considerable political influence while congratulating itself on being neutral.</p>
+<p>Overlay freedom is what makes the restraint real.</p>
+<h2>Neutral does not mean innocent</h2>
+<p>There is one qualification worth making here, once.</p>
+<p>Technical infrastructure can shape later behaviour.</p>
+<p>If a spatial hierarchy becomes widely used for statistics, organisations may start planning against its units. Companies may adopt them as operating territories. A government might eventually use some of the same boundaries because existing data and systems make that convenient. People can even attach cultural meaning to technical regions simply because those regions appear frequently enough on maps.</p>
+<p>Earth has plenty of precedents. Postal districts acquire social identities. Roads become political boundaries. Statistical areas gain names and begin to feel like places.</p>
+<p>A Martian reference architecture cannot guarantee that its lines will remain culturally or politically irrelevant forever.</p>
+<p>That would be a much stronger claim than the design can honestly make.</p>
+<p>The appropriate standard is narrower: do not encode political authority into the base geography. A reference identifier should say nothing about sovereignty, ownership, resource entitlement or the legitimacy of whichever institution currently operates there.</p>
+<p>Future politics may borrow the line.</p>
+<p>Matlas does not award it.</p>
+<p>That is technical neutrality in the only useful sense: restraint rather than innocence.</p>
+<h2>The first major design choice</h2>
+<p>We can now answer the question with which the chapter began.</p>
+<p>Can you divide the whole planet without claiming the whole planet?</p>
+<p>Yes — provided the division is treated as reference infrastructure rather than territorial destiny, and provided every layer above it remains free to draw its own geography.</p>
+<p>For the founding Mars described in Chapter 3, I would therefore start with the whole planet rather than grow the common layer outward from settlements.</p>
+<p>The reasoning is practical. Empty terrain can become operationally important before it becomes inhabited. Future settlement patterns are unknowable. Science, infrastructure and machines will cross the gaps between communities. Hundreds of independent local systems would eventually create hundreds of interfaces, whereas a common substrate allows local systems to remain different without becoming mutually unintelligible.</p>
+<p>Most importantly, whole-planet reference does not require whole-planet administration.</p>
+<p>A patch of Mars can possess a stable identity while remaining unnamed, uninhabited, unclaimed and almost completely ignored. Nothing else needs to happen merely because the reference exists.</p>
+<p>This turns out to be the restraint hidden inside the global approach. Instead of designing rich geography everywhere, we standardise only the small amount that benefits from being common.</p>
+<p>The planet gets a spatial skeleton.</p>
+<p>Everything human remains free to grow across it.</p>
+<p><strong>Start with the planet.</strong></p></div><nav aria-label="Reading order" class="next-prev"><a href="interlude-baseline.html">← Do We Need Another System?</a><a href="chapter-07.html">How Big Is a Place? →</a></nav></article></main></div><footer class="imprint">© JB Bullock 2026. All rights reserved. Book text and artwork are not licensed under the technical specification or software licences. · <a href="index.html">Book contents</a></footer></body></html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Names, Borders and Memory — Matlas</title><meta content="The Human Geography Above Matlas" name="description"/><link href="../assets/book.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "Names, Borders and Memory", "isPartOf": {"@type": "Book", "name": "Matlas: An Operational Map of Human Mars", "author": {"@type": "Person", "name": "JB Bullock"}}, "inLanguage": "en", "copyrightHolder": "JB Bullock", "copyrightYear": 2026, "creativeWorkStatus": "First Public Web Edition 1.0 · October 2026"}</script><link rel="canonical" href="https://iamjbcom.github.io/matlas/book/chapter-20.html"/><meta property="og:url" content="https://iamjbcom.github.io/matlas/book/chapter-20.html"/><meta property="og:type" content="article"/></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="top"><a class="brand" href="index.html">MATLAS</a><span class="preview-pill">FIRST PUBLIC WEB EDITION</span><span class="minor">Operating Architecture · JB Bullock</span></header><div class="layout"><nav aria-label="Mobile book contents" class="mobile-chapters"><details><summary>Contents — jump to a chapter</summary><nav aria-label="Chapters, mobile menu" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="page" class="toc-item selected" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></details></nav><aside class="sidebar"><nav aria-label="Book chapters" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="page" class="toc-item selected" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></aside><main class="main" id="content"><article class="article"><div class="eyebrow">Chapter 20 · Part 5</div><h1>Names, Borders and Memory</h1><p class="dek">The Human Geography Above Matlas</p><div class="prose"><p>A new settlement begins with coordinates.</p>
+<p>Quite soon, it acquires nicknames.</p>
+<p>The official plan may be immaculate. Habitats have numbers, airlocks have identifiers, corridors have engineering designations, and GRID and BAR sit underneath with all the precision we have spent most of this book constructing. Then somebody calls an awkward bend in a tunnel something rude, a maintenance junction acquires the name of the person who once spent an appalling night repairing it, and a café lends its name to the square outside.</p>
+<p>That is when geography starts becoming human.</p>
+<p>Matlas can identify the ground before any of this happens. It can keep that location stable for as long as the specification survives. What it cannot do is supply the meaning that will eventually accumulate there.</p>
+<h2>Names arrive before anyone plans them</h2>
+<p>Informal naming will probably begin almost immediately because people are good at shortening official language and even better at ignoring it.</p>
+<p>“HAB-03 EAST SERVICE CONNECTION” becomes “East Lock”. A steep route beside an escarpment becomes “the Steps” despite containing no steps. A remote power junction becomes “Maya’s Corner” because Maya once spent nineteen miserable hours repairing it during a storm. None of these names needs permission in order to become useful.</p>
+<p>People name places because they need to distinguish them, remember them, complain about them or tell stories about them. The best names often arrive before anybody realises a naming decision has been made.</p>
+<p>Over time, some will become official. Others will remain unofficial while appearing on every map that anyone actually uses. A contractor’s name may survive on a district long after the company has vanished. A temporary construction label may outlive the structures that produced it. The origin may remain obvious, or disappear while the name carries on.</p>
+<p>That is one of the peculiar strengths of place names: they can preserve history after people have forgotten the story.</p>
+<p>Names also leave marks on the physical map. A road may bend around a structure demolished decades earlier. A square may exist because two temporary construction corridors happened to meet. A neighbourhood boundary may follow the footprint of an early pressure zone whose engineering purpose disappeared before most current residents were born. The city becomes partly autobiographical: decisions made for immediate practical reasons survive as shape, then acquire stories, then become simply how the place is.</p>
+<p>That helps explain why mature human geography is usually messier than technical geography.</p>
+<p>It remembers.</p>
+<p>GRID stays clean because memory is not its job. Streets, districts and local names are free to collect the residue of what actually happened.</p>
+<p>Consider a temporary cluster of early habitats nicknamed <strong>Tin Town</strong>. Planners dislike it and propose something more dignified. Nobody uses the replacement. Twenty years later the temporary modules are gone but the district is still Tin Town. Fifty years later residents are proud of the name. A century later somebody writes an academic paper arguing that the popular account of its origin is almost certainly wrong.</p>
+<p>Nothing about that process requires the underlying spatial identity to change.</p>
+<p>The district can grow across GRID boundaries. The nickname can become official. A later administration can rename it again. The ground remains referable throughout.</p>
+<h2>One place can carry several names</h2>
+<p>Official naming will still matter. Settlements will need street signs, transport maps, emergency records and public facilities with names that institutions agree to use. Scientific organisations will continue using recognised planetary nomenclature where it applies. Local authorities, companies and communities will all attach labels to the places they manage or inhabit.</p>
+<p>The point is not to keep naming informal. It is to prevent official naming from becoming the only geography that counts.</p>
+<p>Official and lived names often separate. A map can be updated in an afternoon. Speech is less obedient. Residents may continue using an old name for decades, particularly when the replacement feels imposed, clumsy or simply less useful.</p>
+<p>A mature place may therefore have an official name, a local nickname, a historical name, a facility code and names in more than one language. An emergency service may prefer one form; residents another. An archive may preserve something nobody says any more. A visitor may use a map label that locals find faintly ridiculous.</p>
+<p>All can refer to the same place.</p>
+<p>Canonical spatial identity benefits from uniqueness because machines need one reproducible answer. Human naming does not. Human language survives very comfortably with ambiguity, redundancy and context.</p>
+<p>There are many places on Earth with the same name because people do not normally name settlements for the convenience of global databases. Mars should be allowed the same freedom. If three settlements eventually contain a <strong>Central Station</strong>, civilisation will probably cope. Local context resolves most cases; software can add settlement context when it does not; the underlying address resolves the physical destination.</p>
+<p>This is precisely why a technical identity is useful.</p>
+<p>It allows ordinary language to remain ordinary.</p>
+<p>Names will also change unevenly. An official authority may rename a street while residents continue using the old form. Different linguistic communities may use different names for the same district. One name may survive in speech while another appears on signs.</p>
+<p>Matlas does not need to settle those disputes. It only needs to keep the references attached to the same ground.</p>
+<p>Language adds another layer without requiring a separate theory. Pronunciations drift, spellings shorten, loanwords arrive and multilingual settlements develop parallel names. The form used by one generation may sound old-fashioned to the next while still remaining perfectly recognisable in an archive.</p>
+<p>That is enough reason to keep canonical machine identity outside cultural vocabulary: the words can evolve without dragging the physical address with them.</p>
+<p>A coordinate protocol is a poor place to conduct a naming war.</p>
+<p>Some names will arrive for harder reasons. An accident, fire, decompression, rescue or other disaster can alter the meaning of a location almost overnight. Yesterday it was an equipment yard. Tomorrow it may be a memorial site whose name carries an event for generations.</p>
+<p>The coordinates may be unchanged.</p>
+<p>The BAR Cell may be unchanged.</p>
+<p>The place is not.</p>
+<p>And most meaning will accumulate in less dramatic ways: the route children walk to school, the bench where friends meet, the first building a family occupied, the corner everybody uses as a landmark, the ridge whose view eventually becomes so familiar that nobody thinks to photograph it.</p>
+<p>A technically perfect map can record all of those locations.</p>
+<p>It cannot decide which ones matter.</p>
+<h2>Borders move too</h2>
+<p>Names are not the only layer that changes.</p>
+<p>Borders will arrive as settlement becomes institutional. Some may begin as service areas or municipal districts. Later there may be larger jurisdictions whose form nobody designing an early technical geography can sensibly predict.</p>
+<p>Some boundaries may follow GRID because convenient existing lines are attractive. Others will follow resources, transport, terrain, settlement history or political compromise and cut across GRID however they need to.</p>
+<p>That presents no particular difficulty for the reference system.</p>
+<p>A city can expand across several Provinces. Two settlements can merge. A municipality can be divided. A regional authority can disappear. The technical identity of the ground underneath need not be rewritten each time.</p>
+<p>This becomes especially useful with age. A scientific station might spend its first fifty years in one jurisdiction and its next fifty in another. Its maintenance records can still refer to the same GRID and BAR locations while the political metadata changes around them.</p>
+<p>The old border remains historically reconstructable without remaining politically alive.</p>
+<p>Political lines also leave cultural traces. A former municipal boundary may continue separating neighbourhood identities long after it has lost legal force. Residents may still talk about <em>Old East</em> and <em>West Settlement</em> generations after the administrative distinction disappeared.</p>
+<p>Several maps can therefore be true at once.</p>
+<p>The same place can accumulate several different kinds of boundary over time. One may be legal, another operational, another historical and another purely cultural. They need not coincide, and forcing them to do so would erase information rather than simplify it. A former settlement edge can remain meaningful to residents after annexation; an emergency-service boundary can move next year without altering either the neighbourhood or the GRID beneath it.</p>
+<p>This is the sort of layered messiness that makes a place feel old.</p>
+<p>The technical map becomes more useful by refusing to demand that every other map look like it.</p>
+<h2>Human regions can be fuzzy</h2>
+<p>Technical geography needs exact boundaries because software eventually has to decide which unit owns a point.</p>
+<p>Cultural geography often does not.</p>
+<p>Where does a neighbourhood end? At which corridor does the old industrial district become the newer residential quarter? How far does one settlement’s cultural influence extend? Where is the edge of a place that locals recognise instantly but draw differently when asked?</p>
+<p>Sometimes there is no single correct line.</p>
+<p>The uncertainty is not poor surveying. It is a property of what is being mapped.</p>
+<p>Human regions emerge from habit, architecture, language, reputation, history and shared experience. Those things rarely stop on an exact meridian.</p>
+<p>A cultural region can therefore cross GRID units, overlap another region or have a boundary best drawn as a fuzzy band rather than a line. A historian may choose one extent while a sociologist chooses another, and residents may disagree with both.</p>
+<p>Matlas should not force that geography into false precision merely because its own units are exact.</p>
+<p>The fixed layer can sit underneath.</p>
+<p>An event can be anchored to a particular Cell while the remembered place extends more broadly. A district can have an approximate cultural edge while the buildings within it retain exact addresses. A historical border can be reconstructed precisely where evidence allows and uncertain where evidence does not.</p>
+<p>Spatial precision is useful.</p>
+<p>Social precision should not be invented.</p>
+<h2>Memory needs an anchor</h2>
+<p>This is where persistence becomes more than an engineering preference.</p>
+<p>Earlier chapters treated it technically: freeze the civil reference realisation, define boundary ownership, version geometric changes, and do not allow a software update to wake an address up somewhere else.</p>
+<p>After a century or two of settlement, the human reason becomes clearer.</p>
+<p>History needs somewhere stable to happen.</p>
+<p>Imagine one patch of Mars over two hundred years. At first it is a construction site described mainly by technical identifiers. Then it lies inside a named settlement. A neighbourhood grows around it. A road is renamed. An administrative border moves. A building is demolished and another replaces it. An accident produces a memorial nearby. Two settlements merge. A second language becomes common and supplies another everyday name.</p>
+<p>GRID and BAR preserve none of those stories.</p>
+<p>They preserve a stable place to attach them.</p>
+<p>That changes what later records can do. A future map can show what the area was called fifty years earlier, where the old jurisdiction ran, which infrastructure predates the merger or where a historic event occurred even after every contemporary label has changed.</p><figure aria-label="Figure 21: One Place Through Time" class="book-figure" id="figure-21"><img alt="Sequence illustrating how a fixed geographic reference continues to identify the same area as settlement activity changes over time." aria-describedby="figure-21-description" decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/image16.webp" width="1200"/><figcaption><span class="figure-id">Figure 21</span> · One Place Through Time</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p id="figure-21-description">A reference unit can retain its geographic meaning while its landscape, settlement patterns, infrastructure or assigned cultural names change. Version changes are required if its membership geometry changes.</p></details></figure>
+<p>The meaning comes from records, photographs, testimony, maps and people.</p>
+<p>The spatial reference simply stops the ground moving underneath them.</p>
+<p>Stable reference also lets different generations describe change without pretending the old geography never existed. A planning map can show today’s city while an archive overlays the original construction perimeter. A school project can reconstruct the first settlement boundary. An investigation can compare incidents before and after an administrative reorganisation.</p>
+<p>None of those tasks requires the old border or old name to remain current.</p>
+<p>It only requires the old record to remain locatable.</p>
+<p>This is the quiet difference between preserving a place and preserving every label ever attached to it. Matlas attempts the first. History can take care of the second.</p>
+<p>The technical layer therefore becomes something like an archive framework without trying to become the archive itself.</p>
+<p>Its cultural thinness becomes an advantage.</p>
+<p>GRID names should eventually seem generic beside the geography above them. BAR identities should feel mechanical. Triplet remains an address interface rather than a source of civic poetry.</p>
+<p>The interesting vocabulary ought to belong to Mars.</p>
+<h2>The grammar and the places</h2>
+<p>There is a limit to what can be designed before people arrive.</p>
+<p>We can define a Quad. We can define how a Click nests inside a Tile and how BAR subdivides that Click. We can define the machinery that allows a location to remain referable while the systems around it change.</p>
+<p>Those things are grammar.</p>
+<p>What we cannot know is which joke will become a district, which ordinary café will lend its name to a neighbourhood, which accident will change the meaning of a site, which former border will remain culturally important or which unofficial name will survive several official attempts to replace it.</p>
+<p>We cannot know which places children born on Mars will regard as beautiful, embarrassing, sacred, fashionable, dangerous or beloved.</p>
+<p>Those things have to happen before they can become geography.</p>
+<p>That is why the cultural incompleteness of Matlas is deliberate. A technical system designed before settlement should not arrive with the richest map of Martian meaning already filled in. If it did, we would have mistaken infrastructure for civilisation.</p>
+<p>The restraint is part of the architecture.</p>
+<p><strong>We can help by providing the grammar. Martians will have to name the places.</strong></p>
+<p>That line is not a disclaimer about something Matlas failed to provide.</p>
+<p>It is the division of labour the whole system was built to protect.</p>
+<p>Matlas can keep a place referable while names change, borders move and memories accumulate. It can give history a stable patch of ground without pretending to know the history in advance.</p>
+<p>The technical map can remain exact.</p>
+<p><strong>Everything that makes the map worth caring about has to be lived.</strong></p></div><nav aria-label="Reading order" class="next-prev"><a href="chapter-19.html">← When the Grid Disappears</a><a href="chapter-21.html">From Proposal to Infrastructure →</a></nav></article></main></div><footer class="imprint">© JB Bullock 2026. All rights reserved. Book text and artwork are not licensed under the technical specification or software licences. · <a href="index.html">Book contents</a></footer></body></html>

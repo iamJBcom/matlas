@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matlas — Comparative Evaluation of Mars Location and Addressing Architectures — Matlas</title><meta name="description" content="An operating-requirements comparison of existing Mars location systems and Matlas"/>
+<link rel="canonical" href="https://iamjbcom.github.io/matlas/research/03-matlas-comparative-evaluation.html"><meta property="og:url" content="https://iamjbcom.github.io/matlas/research/03-matlas-comparative-evaluation.html"/>
+<link rel="stylesheet" href="assets/research.css"></head><body><a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><a class="brand" href="../index.html">MATLAS</a> <nav><a href="../book/index.html">Read book</a><a href="index.html">Research papers</a></nav></div></header>
+<main class="wrap" id="main"><p class="eyebrow">Informative Matlas companion · Initial Public Issue 1.0 · October 2026</p>
+<p class="formatlinks">Download <a href="source/03-matlas-comparative-evaluation.md">Markdown source</a> · <a href="pdf/03-matlas-comparative-evaluation.pdf">PDF</a> · <a href="licenses/03-matlas-comparative-evaluation.LICENSE.txt">CC BY 4.0 notice</a></p>
+<article class="prose"><h1>Matlas — Comparative Evaluation of Mars Location and Addressing Architectures</h1>
+<p><em>An operating-requirements comparison of scientific coordinates, named features, spatial indexes, local addressing and Matlas</em></p>
+<p><strong>Initial Public Issue 1.0 · October 2026 · Author-approved text · Publication subject to separate release authorization</strong><br />
+<strong>Creator:</strong> Jonathan Bullock<br />
+<strong>Publication edition:</strong> Initial Public Issue 1.0 · October 2026<br />
+<strong>Approved public-issue licence:</strong> CC BY 4.0 for the author's original text</p>
+<h2>Executive assessment</h2>
+<p>Mars already has scientific coordinates, remotely sensed maps, recognized named features and mission-specific operational practices. Matlas does not aim to displace them. Instead, it asks whether a future populated Mars would also benefit from a stable, planet-wide <strong>civil operating geography</strong> and precise <strong>machine-address identity</strong> that remain available before local road, property and settlement naming systems are built.</p>
+<p>This paper compares the roles of existing system families and Matlas against the ten design requirements MR1–MR10 set out in Chapter 5 of <em>Matlas: An Operational Map of Human Mars</em>. It is a <strong>qualitative architectural evaluation based on the author's stated requirements</strong>, not a controlled benchmark, cost study, independent preference survey or universal ranking of technical standards.</p>
+<h2>1. Evaluation frame: ten requirements</h2>
+<p>The manuscript's requirements are: <strong>MR1 Be anchored</strong>, <strong>MR2 Cover everywhere</strong>, <strong>MR3 Scale coherently</strong>, <strong>MR4 Stay put</strong>, <strong>MR5 Take no sides</strong>, <strong>MR6 Accept overlays</strong>, <strong>MR7 Be operationally useful</strong>, <strong>MR8 Work for people</strong>, <strong>MR9 Work for machines</strong>, and <strong>MR10 Remain open</strong>. They deliberately straddle geodesy, governance, software, operations and public communication.</p>
+<p>No single existing system is necessarily deficient because it was built for a different purpose. A planetocentric frame may serve measurement excellently while doing little for residents' regional vocabulary; a local street address may be an ideal everyday destination inside a city while having no global equivalent for unsettled terrain. These are differences of <em>function</em>, not necessarily failures.</p>
+<h2>2. What the competing approaches are for</h2>
+<table>
+<thead>
+<tr>
+  <th>System family</th>
+  <th>Primary strength</th>
+  <th>Interface distinction / limit relevant to Matlas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Scientific coordinates and reference frames</td>
+  <td>Numeric geographic/physical position and traceable measurement</td>
+  <td>Not inherently a persistent nested civil-area name or population-scale address</td>
+</tr>
+<tr>
+  <td>IAU-recognized planetary nomenclature</td>
+  <td>Stable names for recognized natural features</td>
+  <td>Does not itself partition all terrain into operational civil areas</td>
+</tr>
+<tr>
+  <td>GIS / DGGS / analytical spatial indexes</td>
+  <td>Powerful spatial computation, overlays and aggregation</td>
+  <td>Often optimized for analytic resolution rather than a small legible civil geography</td>
+</tr>
+<tr>
+  <td>Local streets, estates and development addresses</td>
+  <td>Strong human usability within a built settlement</td>
+  <td>Depend upon local schemes and do not uniquely cover all uninhabited land</td>
+</tr>
+<tr>
+  <td>Survey/parcel/legal boundary systems</td>
+  <td>Precise defined legal or jurisdictional objects</td>
+  <td>Presuppose authority, datum and policy; should not be imposed globally by Matlas</td>
+</tr>
+<tr>
+  <td>Asset and equipment registries</td>
+  <td>Identify particular machines, facilities or objects</td>
+  <td>Object identity can persist while its <em>location</em> changes</td>
+</tr>
+<tr>
+  <td>Matlas MGRID + BAR</td>
+  <td>Nested geographic identity and exact machine place address</td>
+  <td>Needs independently verified external frame integration before physical certification</td>
+</tr>
+<tr>
+  <td>Candidate Triplet / M3B</td>
+  <td>Potential concise human communication of a BAR place</td>
+  <td>Production dictionary, reversible global allocation and speech safety remain unverified</td>
+</tr>
+</tbody>
+</table>
+<p>This matrix is a framework for complementary use, not a declaration that Matlas supersedes the other technologies or that alternative DGGS/addressing proposals have been exhaustively surveyed.</p>
+<h2>3. MGRID versus coordinates and grids</h2>
+<p>Matlas assigns canonical Mars area labels from the top-level Quad through the Zand, Province, Sector and Tile to Click. The deliberate civil hierarchy is designed for recurring operations: route planning by region, grouping infrastructure, emergency dispatch, practical records and conversation about places. It is complementary to scientific coordinates, which remain necessary for geometric position and measurement.</p>
+<p>The angular rules and the ±72° polar transition are explicit. Polar rows have variable longitudinal branching based on the actual parent geometry, so the identifier logic does not assume a uniform Cartesian rectangle at the poles. <strong>26 Quads, 624 Zands and 193,557,552 Clicks</strong> are defined within the stipulated model. This supports a broad, persistent reference structure, but it does not yet prove ease of learning, social acceptance or geodetic transformation accuracy for actual spacecraft data.</p>
+<p>A suitable future evaluation would contrast Matlas with representative DGGS and geographic indexing systems on exact boundary ownership, area distortion, adjacency operations, ID length, hierarchy intuitiveness, version migration, spatial query cost and independent interoperation. The handoff offers source-local results for Matlas, not a measured head-to-head comparison against a selected external system.</p>
+<h2>4. BAR versus local addresses and object IDs</h2>
+<p>BAR supplies a global geometric <em>place</em> identifier beneath every MGRID Click. Its 16×16 Courts and 16×16 Cells yield 65,536 Cells per Click, with an unsigned 44-bit canonical Cell payload after Click and Court fields. The 12.68-trillion-cell capacity is a mathematical property of the design, not a registry of real settlements or a guarantee of practical positional accuracy.</p>
+<p>This is useful precisely where roads and postal-style names do not yet exist: exploratory terrain, an unmanned depot, an isolated utility or a developing settlement. Conversely, inside a mature city, a named building, public street address and locally regulated parcel reference may be more natural. BAR should be an interoperable <em>underlay</em>, not a mandate to abolish those systems.</p>
+<p>A BAR Cell is not a parcel, a property right, a height coordinate or an asset identity. Cell ownership on a mathematical boundary and the exact machine byte framing are defined; survey-quality physical transformation remains a different certification problem. The current 26-case private receiving smoke test and prior local code comparisons do not measure emergency-dispatch reliability or rover navigation accuracy.</p>
+<h2>5. Triplet versus direct binary and human labels</h2>
+<p>Most people will not communicate <code>Cell44</code> integers in ordinary speech. Triplet proposes to overlay three words while leaving the underlying BAR identity unaltered. The semantic design distinguishes W1/W2 classes and W3 roles, aiming to help people notice implausible or misheard combinations instead of relying only on opaque random labels. Future lexical versions can then evolve without changing already issued machine locations.</p>
+<p>The trade-off is substantial engineering responsibility. Spoken safety needs more than a large list of attractive words: eligibility, frequency, homophones, accent robustness, locality and Court exclusivity must be proven over a complete allocation. No finished MB3-EN1 vocabulary or production encoder was supplied in the October handoff. The present comparison therefore treats Triplet's potential usability as a <em>hypothesis to test</em>, not an established performance advantage.</p>
+<h2>6. Use-case assessment</h2>
+<p>For <strong>scientific measurement</strong> and precise spacecraft operations, published scientific reference frames and proven instrumentation remain primary; Matlas is an additional label and must not be used to bypass frame verification. For <strong>global logistical records</strong> or <strong>regional operational planning</strong>, a stable hierarchical civil index offers an intuitively useful organising layer if its reference remains reproducible. For <strong>settlement administration</strong>, MGRID can coexist with later political divisions and names rather than imposing them. For <strong>emergency communications</strong>, a future Triplet may become easier to speak than numeric IDs, but production safety must be established experimentally.</p>
+<p>The book enumerates twelve operating jobs ranging from rendezvous and maintenance to land-use records and shared geographical vocabulary. These are <em>intended use cases</em>, not twelve operational trials already completed. Their value is to define questions that implementers can test independently.</p>
+<h2>7. Risks, alternatives and governance</h2>
+<p>Matlas imposes choices: a frozen area hierarchy, a versioned reference realization, canonical boundary ownership, and a distinctive vocabulary of Quad/Zand/Province/Sector/Tile/Click. An independent team might instead prefer a standard scientific DGGS with a locally branded naming layer, or local addresses backed by common coordinates. Both are legitimate directions to evaluate. Matlas's claimed attraction is the particular integrated <em>civil + machine + optional language</em> interface, not inevitability or demonstrated universal preference.</p>
+<p>Stability creates a governance duty. New reference models must not silently move historical locations. New words must not reinterpret existing binary Cells. A global operating grid must remain neutral about sovereignty, property and cultural naming. Evidence of third-party integration, cost, independent accessibility and error rates should ultimately decide whether its additional layer earns adoption.</p>
+<h2>8. Qualified conclusion</h2>
+<p>Matlas is a coherent proposal for an operating geography whose <strong>conceptual distinctions are clear and locally testable</strong>, not an already independently certified global address service. It should be examined alongside rather than substituted for mature scientific systems. Its strongest current contribution is a complete architectural disclosure: hierarchical area identities, exact binary place-address semantics and a separated human language aspiration. The most urgent outstanding evaluations concern MRR-1 physical reference authenticity, external BAR/geodetic conformance and Triplet production vocabulary and speech safety.</p>
+<p>The author has deliberately left those engineering gates open. This comparative paper does not announce their closure, issue a standalone normative protocol or state that another Mars indexing or addressing architecture is objectively inferior.</p>
+<h2>Publication boundary and source basis</h2>
+<p>This companion's original author prose is approved for issue under CC BY 4.0, separate from the copyrighted book and 97 website images, upon separate publication authorization. It incorporates no external system's proprietary datasets or unapproved lexical corpora. The existing MGRID September Zenodo record remains subject to distinct verification and is not republished here.</p>
+<p><strong>Private frozen sources:</strong> <em>Matlas</em> Chapter 4 (twelve operating jobs), Chapter 5 (MR1–MR10), Chapters 9–17, Appendices E–I; <code>docs/architecture/comparison.md</code>, <code>requirements.md</code>, <code>overview.md</code>, <code>status-and-gates.md</code>, and the pinned MGRID/BAR/Triplet source documents. A systematic externally sourced prior-art survey and quantitative third-party benchmarking remain separate future work.</p>
+</article><p class="back"><a href="index.html">← All three papers</a></p></main>
+<footer><div class="wrap">Original companion text © JB Bullock 2026 · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Book and artwork remain all rights reserved. Separate MRR-1 and production Triplet certification is not claimed.</div></footer></body></html>

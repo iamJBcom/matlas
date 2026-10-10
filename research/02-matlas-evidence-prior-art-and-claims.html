@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matlas — Evidence, Prior Art &amp; Claims — Matlas</title><meta name="description" content="Evidence, authorship, prior art, and technical limits"/>
+<link rel="canonical" href="https://iamjbcom.github.io/matlas/research/02-matlas-evidence-prior-art-and-claims.html"><meta property="og:url" content="https://iamjbcom.github.io/matlas/research/02-matlas-evidence-prior-art-and-claims.html"/>
+<link rel="stylesheet" href="assets/research.css"></head><body><a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><a class="brand" href="../index.html">MATLAS</a> <nav><a href="../book/index.html">Read book</a><a href="index.html">Research papers</a></nav></div></header>
+<main class="wrap" id="main"><p class="eyebrow">Informative Matlas companion · Initial Public Issue 1.0 · October 2026</p>
+<p class="formatlinks">Download <a href="source/02-matlas-evidence-prior-art-and-claims.md">Markdown source</a> · <a href="pdf/02-matlas-evidence-prior-art-and-claims.pdf">PDF</a> · <a href="licenses/02-matlas-evidence-prior-art-and-claims.LICENSE.txt">CC BY 4.0 notice</a></p>
+<article class="prose"><h1>Matlas — Evidence, Prior Art &amp; Claims</h1>
+<p><em>Distinguishing defined geography, tested addressing mathematics, provisional physical reference frames and historical originality claims</em></p>
+<p><strong>Initial Public Issue 1.0 · October 2026 · Author-approved text · Publication subject to separate release authorization</strong><br />
+<strong>Creator:</strong> Jonathan Bullock<br />
+<strong>Publication edition:</strong> Initial Public Issue 1.0 · October 2026<br />
+<strong>Approved public-issue licence:</strong> CC BY 4.0 for the author's original text</p>
+<h2>Purpose</h2>
+<p>Matlas is deliberately published first as a <strong>proposed architecture</strong> that future researchers, settlements and software developers can independently assess. Its claims do not all have the same evidentiary basis. Some are <em>definitions</em> established by the design; others follow by <em>exact arithmetic</em>; others have <em>local executable test evidence</em>; and some depend upon reference data or independent field tests that are not yet available.</p>
+<p>This evidence paper identifies those distinctions and positions the work alongside pre-existing Mars scientific cartography, feature naming, spatial indexing and addressing systems. It is <strong>not</strong> an exhaustive novelty search, a formal certification statement or proof that no earlier thinker proposed a comparable integrated architecture.</p>
+<h2>1. What Matlas specifically contributes</h2>
+<p>The authorial contribution being disclosed is the <strong>combination</strong> of three layers:</p>
+<ol>
+<li><strong>MGRID:1:MARS</strong> — an unbroken, canonical Mars-wide nested operating-area hierarchy, including deterministic equatorial and polar boundary ownership and Click ordinal numbering.</li>
+<li><strong>BAR:1:MARS</strong> — a binary, locally reversible Court/Cell addressing layer attached to the exact MGRID Click identity, with contextual machine transport and explicit rejection of invalid encodings.</li>
+<li><strong>Triplet / M3B</strong> — a prospective human-friendly lexical view on BAR identity, intended to use semantic families, pronunciation/familiarity checks and lexical exclusivity to reduce errors without changing the machine address.</li>
+</ol>
+<p>The architecture distinguishes <em>where</em> a site lies from what it is called, who owns it, or which object currently occupies it. This is an integration and design claim, not an assertion that coordinate systems, spatial hierarchies, compact integer encodings, word addresses or polar subdivision were individually invented here.</p>
+<h2>2. Source and approval hierarchy</h2>
+<p>The private handoff identifies author-ratified decisions <strong>I1-A–I1-C and R1–R5</strong> in source-pinned MGRID and BAR documents. The ratified scope covers hierarchy and boundary semantics, polar P1 branching, Click ordinals, Court36/Cell44, tagged frames and the BAR-JSON:1 transport. Normative-style SHALL statements inside those checkpoint documents convey <em>author-approved design intent</em>; they do not make the full Matlas system an externally certified public normative v1.0 release.</p>
+<p>The companion source indexes point to frozen evidence checks and author-approval receipts. The M9 receiving audit independently verified 277/277 handoff-file hashes and checked 26 BAR machine cases, but those are <strong>receiving/local integrity checks</strong>, not an independent replication of a complete physical Mars reference model. The historical source chain should be available to future validators through versioned hashes; this paper does not fabricate missing third-party certifications.</p>
+<h2>3. Claims ledger</h2>
+<table>
+<thead>
+<tr>
+  <th>ID</th>
+  <th>Statement</th>
+  <th>Supported status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MAT-01</td>
+  <td>Matlas defines an operating hierarchy from Quad to Click</td>
+  <td><strong>DEFINED / author-ratified design</strong></td>
+</tr>
+<tr>
+  <td>MAT-02</td>
+  <td>The hierarchy contains 26 Quads, 624 Zands and 193,557,552 Clicks</td>
+  <td><strong>EXACT enumeration within the stipulated model</strong></td>
+</tr>
+<tr>
+  <td>MAT-03</td>
+  <td>Longitude/latitude seam rules and unique polar apex lineages are mathematically specified</td>
+  <td><strong>DEFINED; local algorithm evidence</strong></td>
+</tr>
+<tr>
+  <td>MAT-04</td>
+  <td>BAR supplies 256 Courts and 65,536 Cells in each Click</td>
+  <td><strong>MATHEMATICALLY DERIVED</strong></td>
+</tr>
+<tr>
+  <td>MAT-05</td>
+  <td>All valid BAR Cells have a 44-bit canonical payload and reversible local ordinal fields</td>
+  <td><strong>DEFINED; locally tested in checkpoint scope</strong></td>
+</tr>
+<tr>
+  <td>MAT-06</td>
+  <td>BAR therefore has 12,684,987,727,872 possible Cell positions</td>
+  <td><strong>EXACT arithmetic; not surveyed ground truth</strong></td>
+</tr>
+<tr>
+  <td>MAT-07</td>
+  <td>The private checkpoint records 4,601 matching Python/JS comparisons</td>
+  <td><strong>LOCAL COMPARISON EVIDENCE; not independent certification</strong></td>
+</tr>
+<tr>
+  <td>MAT-08</td>
+  <td>All modern spacecraft coordinates have verified, accurate conversion into MRR-1</td>
+  <td><strong>NOT ESTABLISHED</strong></td>
+</tr>
+<tr>
+  <td>MAT-09</td>
+  <td>The required original NAIF file has been authenticated and genuine CSPICE parity passed</td>
+  <td><strong>NOT ESTABLISHED</strong></td>
+</tr>
+<tr>
+  <td>MAT-10</td>
+  <td>The complete MB3-EN1 dictionary and reversible word allocator have been released</td>
+  <td><strong>NOT ESTABLISHED</strong></td>
+</tr>
+<tr>
+  <td>MAT-11</td>
+  <td>Matlas supersedes IAU naming, scientific GIS/DGGS systems or future law</td>
+  <td><strong>NOT CLAIMED; outside design scope</strong></td>
+</tr>
+<tr>
+  <td>MAT-12</td>
+  <td>The integrated hierarchy/address/Triplet proposal is attributable to the published author</td>
+  <td><strong>DEFINED IN THESE DISCLOSURES; absolute historical priority unproven</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>4. Mathematics and local conformance</h2>
+<p>MGRID makes exact choices about boundary ownership: internal east-positive longitude edges belong to the eastward child, nonapex latitude edges to the poleward child, the equator to the northern side, and each exact pole to one designated apex lineage. Polar geometry uses a row-specific variable eastward branch count rather than pretending that uniform rectangular longitude widths survive at 90° latitude. These rules enable a deterministic partition given a stipulated coordinate and mathematical realisation.</p>
+<p>BAR then assigns each Click a 28-bit ordinal and appends two 8-bit local codes: <code>Court36 = (Click28 &lt;&lt; 8) | CourtCode</code> and <code>Cell44 = (Click28 &lt;&lt; 16) | (CourtCode &lt;&lt; 8) | CellCode</code>. The payload count is the product of the 193,557,552 assigned Click ordinals and 65,536 Cells per Click. The reserved portion of the wider 28-/36-/44-bit unsigned spaces is <strong>invalid</strong>, not an alternative naming space. The local <code>BAR-JSON:1</code> encoding adds <code>BAR:1:MARS</code>, <code>MGRID:1:MARS</code> and <code>MRR-1</code> context to avoid mistaking an unlabelled binary payload for a globally meaningful address.</p>
+<p>These are compelling <em>formal</em> properties. Their local test results do not demonstrate that a survey-quality coordinate is already transformed into MRR-1 to known physical accuracy, or that the system can guide a rover to within the bounds of a particular rock or asset. BAR identifies a planar angular patch, not a surveyed vertical solid or an independent asset identity.</p>
+<h2>5. Physical-reference verification gap</h2>
+<p>The proposed reference realisation <code>MRR-1</code> requires the original relevant NAIF data file and an authenticated SHA-256 fingerprint, an identified CSPICE implementation, independent <code>pxform</code> checks and disclosed coordinate-transform vectors. The source checkpoint states that these gates are <strong>OPEN</strong>. A stipulated frame inside locally tested mathematics cannot be described as externally certified physical Mars accuracy merely because its encoded areas round-trip perfectly.</p>
+<p>A future certification package should give explicit provenance and error bounds for physical transformations, test points at angular seams and poles, independent gold vectors, reference-model versioning and a failure path for uncertain or unsupported inputs. This work is beyond the October explanatory publication scope.</p>
+<h2>6. Triplet lexical work remains provisional</h2>
+<p>The optional Triplet/M3B design defines distinct roles for W1/W2/W3, structural semantic families and safety objectives. The vocabulary release process would need to freeze legally usable lexicons, pronunciation/familiarity checks, candidate allocation, Court exclusivity, capacity evidence and reversible machine mappings. The source handoff contains <strong>draft contracts and compiler architecture</strong>, not an approved, exhaustively allocated, independently tested English profile. It cannot support a claim that any three-word phrase already identifies a certified Mars Cell worldwide.</p>
+<p>The machine identity would remain valid independently of human vocabulary evolution. This separation is central to the architecture and should not be confused with successful production of the entire lexical layer.</p>
+<h2>7. Prior art and non-substitution</h2>
+<p>Matlas operates amid mature systems, not in a geographic vacuum. <strong>Planetocentric latitude/longitude and scientific reference frames</strong> already define numeric locations. <strong>IAU nomenclature</strong> identifies recognized natural features. <strong>GIS and discrete global grid systems (DGGS)</strong> support analytical overlays, aggregation and computation. <strong>Local street/survey/address systems</strong> may work extremely well within particular settlements. <strong>Asset identifiers</strong> track objects, which can move independently of their current location.</p>
+<p>Matlas proposes an operating-area hierarchy and a stable machine <em>place</em> address at a different interface boundary. This is a reason to compare and interoperate, <strong>not</strong> a proof that any established method is defective. Existing systems' priority, coverage, standards status, licensing and measured performance must be examined in their own right. The handoff's comparison matrix is expressly conceptual; this draft has not performed an exhaustive independent global prior-art review or an empirical superiority trial.</p>
+<h2>8. Existing MGRID publication and priority discipline</h2>
+<p>The private handoff reports a September 2026 <em>MGRID:1:MARS v1.0</em> Zenodo publication (record/DOI reported as <code>10.5281/zenodo.22695710</code>). The exact external record, payload and relation to the later consolidated Matlas sources <strong>require independent verification</strong> before making it a definitive citation or depositing a replacement. The October Matlas book and proposed informative papers should identify themselves as subsequent explanatory work, not silently issue a second copy of an unchanged earlier normative package.</p>
+<p>Publishing a timestamped, attributable description supplies valuable evidence that the author disclosed specific ideas by that date. It does not prove absolute historical novelty, grant scientific endorsement or force later users to adopt the architecture. Independent discovery, earlier literature and implementation improvements remain possible.</p>
+<h2>9. Next evidentiary programme</h2>
+<p>The sensible sequence is to preserve the existing disclosed architecture, resolve MRR-1 source authentication and physical parity, commission independent machine-vector tests, and independently audit a proposed full Triplet lexical compiler. Only after those results should the author decide what scope merits a new standalone BAR/Triplet normative release. Claims about real-world navigation accuracy, universal safety or language completeness must remain absent until separately established.</p>
+<h2>Rights and references</h2>
+<p>The author's original text of this proposed paper is intended for CC BY 4.0 <strong>only upon explicit approval and issuance</strong>. The separate illustrated book and images remain all-rights-reserved. Unowned third-party data and sources are not automatically relicensed. This is an informative technical audit, not an issued normative protocol or certification.</p>
+<p><strong>Private frozen source basis:</strong> the M9 handoff's <code>TRACEABILITY.md</code>, <code>status-and-gates.md</code>, <code>provenance.md</code>, original <code>MGRID-1-MARS.md</code>, <code>BAR-1-MARS.md</code>, <code>MRR-1-REFERENCE-REALISATION-DRAFT.md</code>, and Chapters 10–17 / Appendices E–I of the author-approved book.</p>
+</article><p class="back"><a href="index.html">← All three papers</a></p></main>
+<footer><div class="wrap">Original companion text © JB Bullock 2026 · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Book and artwork remain all rights reserved. Separate MRR-1 and production Triplet certification is not claimed.</div></footer></body></html>

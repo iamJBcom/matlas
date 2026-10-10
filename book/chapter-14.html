@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>A Kilometre Is Not an Address — Matlas</title><meta content="The Last-Mile Location Problem" name="description"/><link href="../assets/book.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "A Kilometre Is Not an Address", "isPartOf": {"@type": "Book", "name": "Matlas: An Operational Map of Human Mars", "author": {"@type": "Person", "name": "JB Bullock"}}, "inLanguage": "en", "copyrightHolder": "JB Bullock", "copyrightYear": 2026, "creativeWorkStatus": "First Public Web Edition 1.0 · October 2026"}</script><link rel="canonical" href="https://iamjbcom.github.io/matlas/book/chapter-14.html"/><meta property="og:url" content="https://iamjbcom.github.io/matlas/book/chapter-14.html"/><meta property="og:type" content="article"/></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="top"><a class="brand" href="index.html">MATLAS</a><span class="preview-pill">FIRST PUBLIC WEB EDITION</span><span class="minor">Operating Architecture · JB Bullock</span></header><div class="layout"><nav aria-label="Mobile book contents" class="mobile-chapters"><details><summary>Contents — jump to a chapter</summary><nav aria-label="Chapters, mobile menu" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="page" class="toc-item selected" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></details></nav><aside class="sidebar"><nav aria-label="Book chapters" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="page" class="toc-item selected" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></aside><main class="main" id="content"><article class="article"><div class="eyebrow">Chapter 14 · Part 4</div><h1>A Kilometre Is Not an Address</h1><p class="dek">The Last-Mile Location Problem</p><div class="prose"><p>Imagine an astronaut is working outside a settlement when something goes wrong.</p>
+<p>Their suit reports the emergency automatically. Operations knows the approximate route they were taking, which team is closest and which part of the settlement should respond. The location resolves cleanly through GRID: Quad, Zand, Province, Sector, Tile and finally Click.</p>
+<p>The system has successfully reduced an entire planet to the correct kilometre.</p>
+<p>The astronaut is still somewhere inside it.</p>
+<p>For regional geography, that is an excellent result. For a person losing pressure, it is an inconvenient amount of Mars.</p>
+<figure aria-label="Mars BAR mark" class="book-figure book-figure-supporting" id="mars-bar-mark-ch14"><img alt="Mars BAR wordmark and symbol on a black background." decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/mars-bar-logo.webp" width="1233"/><figcaption><span class="figure-id">Supporting illustration</span> · Mars BAR mark</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p>The Mars BAR mark used in the book’s BAR section: an orange angular monogram above the words MARS BAR in white on black.</p></details></figure><h2>When an area stops being enough</h2><figure aria-label="Figure 15: One Click Is Still a Big Place" class="book-figure" id="figure-15"><img alt="Illustrated kilometre-scale MGRID Click containing multiple facilities and objects, too broad to identify one precise destination." aria-describedby="figure-15-description" decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/image56.webp" width="1200"/><figcaption><span class="figure-id">Figure 15</span> · One Click Is Still a Big Place</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p id="figure-15-description">A Click distinguishes a local area from others within a broad hierarchy, but it is still too large to tell an emergency responder which few metres contain the person or vehicle of interest.</p></details></figure>
+<p>A Click feels small when the alternative is a planet with almost 145 million square kilometres of surface. It feels rather larger when you are looking for one person.</p>
+<p>On undeveloped terrain, a kilometre-scale area can contain ridges, shallow craters, equipment, rover tracks and a heroic quantity of visually similar dust. Inside a mature settlement, the same area might contain habitats, roads, power systems, storage yards, loading points, construction sites, parked vehicles and several different entrances to the same large building.</p>
+<p>Knowing the correct Click is useful in all of these cases, but it is not the same as knowing the destination. A cargo vehicle can reach the Click containing a receiving facility and still arrive at the personnel entrance rather than the freight lock. A rover can return to the Click containing its charging infrastructure and still have several hundred metres left to travel. An engineer can report failed equipment accurately enough for the maintenance system to know the site, while leaving the technician to search the site when they arrive.</p>
+<p>The underlying problem is not peculiar to emergencies. It appears whenever the distinction between <em>somewhere around here</em> and <em>this exact place</em> becomes operationally important.</p>
+<p>GRID cannot make that distinction because GRID was never intended to. Its hierarchy answers a series of area questions: which continental-scale part of Mars, which regional block, which settlement-scale area, which kilometre of ground? Each level provides useful geographic context, and Click is approximately where that particular logic reaches its natural end.</p>
+<p>Below that point, the question changes. We are no longer principally asking <strong>which area of Mars contains this activity?</strong> We are increasingly asking <strong>which few metres are the destination?</strong></p>
+<p>That is a different job.</p>
+<h2>Precision already exists</h2>
+<p>It would be easy at this point to claim that Mars needs a new addressing system because latitude and longitude are too imprecise.</p>
+<p>That would be nonsense.</p>
+<p>Coordinates can describe position on Mars far more precisely than anything this book needs from a civil address. A sufficiently specified coordinate can identify a point to metres, centimetres or finer scales, subject to the quality of the underlying reference frame and measurement. Navigation, surveying, science and robotics already depend on that kind of precision.</p>
+<p>Nothing in Matlas improves the laws of geometry. The missing property is not <strong>precision</strong>; it is <strong>addressable identity</strong>.</p>
+<p>A coordinate describes position. An address gives different people and systems a stable way to refer to the same destination. That distinction matters because operational locations have lives of their own: a receiving lock may appear in logistics software, safety documentation, maintenance records and emergency procedures; a remote instrument may be visited repeatedly over many years; a temporary landing site, pipeline junction or emergency cache may need to be shared among organisations that do not use the same software.</p>
+<p>All of them could store coordinates, and sometimes they should. But a common operating geography has another useful job: provide a persistent identity that can sit alongside the measurement.</p>
+<p>The difference is familiar on Earth. The coordinates of your house may be more mathematically precise than its street address, but most organisations do not identify the house by asking you to recite latitude and longitude. The address supplies a common reference that different systems can carry while more precise positioning remains available underneath.</p>
+<p>Mars needs the same distinction, particularly because much of Mars will not have streets.</p>
+<h2>Most of Mars will not have a street address</h2>
+<p>Local addressing will eventually be excellent in the places where people build it. A settlement can name streets, habitats, levels, airlocks and districts in ways that suit the place itself. A mine can develop its own underground location system. A large industrial site can number bays and access points.</p>
+<p>These systems will often be more convenient in daily life than a planet-wide technical address, just as <em>14 Copernicus Lane</em> would usually be a better answer to a dinner invitation than anything encoded in forty-four bits.</p>
+<p>The difficulty is that a universal location layer cannot begin by assuming a city already exists. A damaged rover 170 kilometres from the nearest settlement has no street. Neither does a scientific instrument on open terrain, a temporary cargo drop, a future construction site or a point selected during an emergency because that happens to be where the casualty fell.</p>
+<p>Those locations can be measured. They may even acquire names later. What they lack at the moment they are needed is a shared address that comes from the geography itself rather than from development around it.</p>
+<p>That requirement becomes more important, not less, during settlement. Exploration can often tolerate specialist coordinates because specialist teams are involved. A civilisation creates far more occasions when ordinary software, institutions and people need to exchange precise locations without first agreeing on a local naming scheme.</p>
+<p><strong>The address therefore has to exist before the street does.</strong></p>
+<h2>Do not keep stretching GRID</h2>
+<p>There is an obvious way to solve the problem: keep subdividing GRID.</p>
+<p>After Click, add another named level, then another, and continue until a branch of the hierarchy identifies only a few square metres. The mathematics would be straightforward, and the resulting address would remain neatly nested inside the structure we already have.</p>
+<p>I rejected that approach because it makes GRID worse at being GRID.</p>
+<p>The existing hierarchy works because its levels correspond to recognisably different geographic scales. Quad, Zand, Province, Sector, Tile and Click provide progressively narrower context as we move from planetary orientation towards local operating geography. A Click is still an area you can sensibly discuss as a piece of settlement or terrain.</p>
+<p>A four-metre patch is different. It is rarely interesting because it constitutes another tier of civil geography; it is interesting because the charger, airlock, casualty or instrument is there.</p>
+<p>That difference is architectural rather than mathematical. Above Click, hierarchy is doing most of the work: we want to move up and down scales, aggregate information and understand where one area sits inside another. Below Click, the primary requirement is to distinguish a destination precisely and economically.</p>
+<p>Adding more civil nouns because subdivision happens to continue would confuse those jobs. GRID would become an indefinitely recursive spatial index rather than the relatively small operating hierarchy it was designed to be.</p>
+<p>So GRID should stop — not because a kilometre is the limit of the mathematics, but because it is approximately the limit of the question GRID exists to answer.</p>
+<p>A second layer can then take over.</p>
+<h2>The new layer must inherit the old one</h2>
+<p>Starting a new layer does not mean starting a new geography.</p>
+<p>If GRID says a Click contains one particular piece of Mars, the fine-address system must inherit <strong>exactly that piece</strong>. There cannot be a narrow strip along one boundary that belongs to a Click but to no fine address, or a sliver claimed by two neighbouring addresses because the systems drew their edges independently.</p>
+<p>Every fine location must belong to one and only one Click. That requirement matters for more than geometric tidiness: a precise location should be able to roll back up through the hierarchy whenever broader context is useful. An emergency Cell should still belong to a particular Click, Tile, Sector, Province, Zand and Quad. A logistics destination should still sit inside the same regional geography used for planning.</p>
+<p>The two layers should therefore meet without translation.</p>
+<p>This is particularly important at high latitude. Regular GRID Clicks are simple angular rectangles, but P1 adapts longitude subdivision beyond 72° as meridians converge. A fine-address architecture that quietly assumes every parent Click is the easy rectangular case would stop being a Mars-wide system precisely where the geometry becomes interesting.</p>
+<p>The correct relationship is simpler: GRID determines the Click, whatever valid geometry that Click has, and the fine layer subdivides the Click it is given.</p>
+<p>The difficult planetary geometry remains solved once, at the level where the difficulty first appears.</p>
+<h2>Exact does not mean infinitely precise</h2>
+<p>The next question is scale.</p>
+<p>Once we decide to subdivide below the kilometre, there is a temptation to keep going until the address becomes spectacularly precise. If metres are useful, surely centimetres are better. If centimetres are better, somebody will eventually suggest millimetres, at which point our civil addressing system has started applying for work as a docking controller.</p>
+<p>That is another case where more precision does not necessarily mean better architecture.</p>
+<p>A universal address needs to get a person or machine close enough that the intended destination has effectively been reached. A rover approaching a charging connector can use cameras, ranging sensors and local control for final alignment. A cargo vehicle can use site guidance at the receiving lock. A rescue team can use suit telemetry, vision or ordinary eyesight once it reaches the casualty.</p>
+<p>Those specialist systems should remain specialist. For the common layer, <strong>a few metres</strong> is a more useful target: small enough to distinguish nearby entrances, equipment, loading positions and emergency locations, while remaining large enough to behave like an address rather than a substitute for precision navigation.</p>
+<p>There is also something operationally sensible about addressing a small patch rather than pretending every real destination is an infinitely small mathematical point. An airlock has width. A charging pad occupies ground. A person and their equipment take up space.</p>
+<p>Two sensors can therefore disagree slightly about the ideal representative coordinate while still agreeing that they are referring to the same civil location.</p>
+<p><strong>The address gets you there. Local positioning finishes the job.</strong></p>
+<h2>It must work when the network does not</h2>
+<p>A universal Mars address also cannot mean <em>the key used to query somebody else's database</em>.</p>
+<p>Online services will be useful. A mapping application should resolve addresses, display them and route people towards them. Logistics platforms will exchange them through APIs. Settlements will cache them, search them and wrap them in interfaces far friendlier than anything described in a technical protocol.</p>
+<p>None of those services should create the meaning of the address.</p>
+<p>A rover carrying a valid address ought to be able to determine where that address refers if the settlement network is unavailable. A remote science station should not need a commercial service to interpret a location already written into its own maintenance record. An emergency system should not turn a temporary communications outage into a philosophical debate about where the casualty has gone.</p>
+<p>Mars is an unusually poor place to make <em>continuous connection to the address company</em> part of the definition of location. The fine layer therefore has to be <strong>offline-decodable</strong>.</p>
+<p>Give a conforming system the protocol, the relevant reference definitions and the address itself, and the destination should remain recoverable without asking a central authority for permission or interpretation.</p>
+<p>That turns the address from a service into infrastructure.</p>
+<h2>One machine answer, many human interfaces</h2>
+<p>There is one more separation to make before designing the mechanism: machines and people do not need the same representation.</p>
+<p>A computer is perfectly content with a compact binary identity. It does not care whether that identity is memorable, pronounceable or attractive on a road sign. A person trying to repeat a location over a noisy radio has very different priorities and is unlikely to regard a dense machine code as evidence of thoughtful interface design.</p>
+<p>Trying to force one representation to satisfy both groups would compromise each. The fine-address layer should therefore have one <strong>canonical machine identity</strong> underneath it, while human interfaces render that identity in more convenient forms without altering the location itself.</p>
+<p>This matters because interfaces should be allowed to evolve faster than geography. A future settlement may display a local building name. An English speaker may use a three-word representation. Another language may use a completely different set of words. Emergency software may prefer a phonetic interface of its own.</p>
+<p>None of those choices should change the few metres of Mars being referenced.</p>
+<p><strong>The place comes first. How people say it comes later.</strong></p>
+<h2>The design brief</h2>
+<p>We can now specify the problem without prematurely specifying the solution.</p>
+<p>The new layer must begin inside every GRID Click and reach the few-metre scale. It must partition the parent completely, preserve deterministic boundary ownership and work through both Regular GRID and P1 without creating a separate polar addressing system.</p>
+<p>Every resulting location must have one canonical machine identity. Given the identity and the appropriate protocol, a conforming implementation must be able to recover the location; given a location, independent implementations must be able to derive the same identity.</p>
+<p>It must remain exactly connected to GRID while being usable without a central registry or continuous network connection. It must stop before civil addressing turns into surveying or robotic control, and it must leave room for a human-facing interface without making human language part of the canonical geography.</p>
+<p>That is a fairly demanding brief, but it is now a narrow one.</p>
+<p>We are no longer designing another map of Mars. GRID has already done that work.</p>
+<p><strong>We are designing the last few metres.</strong></p>
+<h2>Bar</h2>
+<p>The resulting system is the <strong>Mars B.A.R. Code — Binary Address Reference Code</strong>.</p>
+<p>From here on, I will call it simply <strong>Bar</strong>.</p>
+<p>The name describes its job rather well. Bar is an address reference layer, with a deterministic machine identity underneath whatever interface a person eventually sees. It begins where GRID deliberately stops and carries location from the kilometre scale down to a few metres.</p>
+<p>It does not replace coordinates. It does not extend the civil hierarchy indefinitely. It does not name places, navigate the final centimetres or require every settlement to abandon its local addresses.</p>
+<p>It answers one narrower question:</p>
+<p><strong>Exactly where?</strong></p></div><nav aria-label="Reading order" class="next-prev"><a href="chapter-13.html">← Where the Grid Bends</a><a href="chapter-15.html">From Click to Cell →</a></nav></article></main></div><footer class="imprint">© JB Bullock 2026. All rights reserved. Book text and artwork are not licensed under the technical specification or software licences. · <a href="index.html">Book contents</a></footer></body></html>

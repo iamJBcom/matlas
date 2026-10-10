@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>What Matlas Gives Up — Matlas</title><meta content="Trade-offs, Scope and Open Questions" name="description"/><link href="../assets/book.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "What Matlas Gives Up", "isPartOf": {"@type": "Book", "name": "Matlas: An Operational Map of Human Mars", "author": {"@type": "Person", "name": "JB Bullock"}}, "inLanguage": "en", "copyrightHolder": "JB Bullock", "copyrightYear": 2026, "creativeWorkStatus": "First Public Web Edition 1.0 · October 2026"}</script><link rel="canonical" href="https://iamjbcom.github.io/matlas/book/chapter-18.html"/><meta property="og:url" content="https://iamjbcom.github.io/matlas/book/chapter-18.html"/><meta property="og:type" content="article"/></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="top"><a class="brand" href="index.html">MATLAS</a><span class="preview-pill">FIRST PUBLIC WEB EDITION</span><span class="minor">Operating Architecture · JB Bullock</span></header><div class="layout"><nav aria-label="Mobile book contents" class="mobile-chapters"><details><summary>Contents — jump to a chapter</summary><nav aria-label="Chapters, mobile menu" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="page" class="toc-item selected" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></details></nav><aside class="sidebar"><nav aria-label="Book chapters" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="page" class="toc-item selected" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></aside><main class="main" id="content"><article class="article"><div class="eyebrow">Chapter 18 · Part 5</div><h1>What Matlas Gives Up</h1><p class="dek">Trade-offs, Scope and Open Questions</p><div class="prose"><p>Every architecture looks impressive if you score it only on the things it was designed to do well. The more revealing test is what it gives up to get there.</p>
+<p>Matlas has made a sequence of choices. GRID uses direct angular geometry and a relatively small civil hierarchy. It freezes spatial identity rather than allowing it to move with improving scientific models. It keeps most of Mars geometrically simple and accepts a change of behaviour near the poles. BAR stops at a few metres rather than pursuing engineering precision. Triplet gives humans a word interface rather than asking everyone to speak machine identifiers. None of those choices is free.</p>
+<p>Other spatial systems can produce better geometry, shorter identifiers, easier neighbour operations, better statistical properties or greater precision. Local addresses will often be better for ordinary life. Specialist machine indexes may be dramatically better for computation. That is not a problem to explain away. It is what architecture looks like once the sales presentation is over.</p><figure aria-label="Figure 19: Matlas Among Other Spatial Systems" class="book-figure" id="figure-19"><img alt="Layered comparison between Matlas spatial reference areas and other geographic mapping, navigation, legal and analytical systems." aria-describedby="figure-19-description" decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/image19.webp" width="1200"/><figcaption><span class="figure-id">Figure 19</span> · Matlas Among Other Spatial Systems</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p id="figure-19-description">Matlas is a supplemental shared reference and addressing substrate. It does not replace coordinate frames, official feature nomenclature, scientific gridding, GIS, specialist navigation or local property and administrative boundaries.</p></details></figure>
+<p><strong>The question is not whether Matlas is the best spatial system. There is no such thing. The question is whether it is a good answer to the requirements we started with.</strong></p>
+<p>This is the chapter where we find out.</p>
+<h2>The costs we chose</h2>
+<p>The clearest compromise is geometric. <strong>GRID is not equal-area.</strong></p>
+<p>Below 72°, its fixed angular divisions mean that the physical width represented by longitude decreases with latitude. A Click nearer the top of Regular GRID therefore covers less surface than an equivalent Click near the equator. P1 improves polar proportions above 72°, but its objective is to prevent increasingly absurd shapes, not to make every unit on Mars identical in area.</p>
+<p>If your main job is comparing quantities per square kilometre, this matters. Counting ten Clicks in one part of Mars does not guarantee the same physical area as counting ten somewhere else. An equal-area DGGS solves that problem more naturally.</p>
+<p>Matlas chose otherwise because the civil layer placed greater weight on direct angular relationships, understandable boundaries, persistent hierarchy and independent reconstruction. That is the trade: unequal area is a cost.</p>
+<p>The <strong>72° transition</strong> is another.</p>
+<p>Most of Mars follows one simple subdivision regime. At 72° north and south, GRID changes to adaptive polar branching. The transition produces a visible discontinuity because the system has changed geometric strategy at a particular latitude rather than gradually changing it everywhere.</p>
+<p>There are more elegant alternatives. Adaptation could begin much earlier and vary continuously. A different global tessellation could distribute distortion across the sphere. A polyhedral architecture could avoid this particular seam entirely while introducing different ones elsewhere.</p>
+<p>GRID keeps the regular planet simple and pays for that simplicity at one conspicuous boundary. The threshold is therefore not a natural law of Mars. It is a design judgement about where fixed longitude has become operationally poor enough to justify changing the rule.</p>
+<p>I think that remains the right trade. It is still a seam.</p>
+<p>P1 itself adds a third cost. Adaptive longitudinal branching means polar units do not always line up with the regular one-to-one neighbourhood pattern of a rectangular lattice. T-junctions appear. One unit may touch more than one neighbour along an edge. Containment remains deterministic, but adjacency becomes less convenient.</p>
+<p>That distinction is important for software. If your primary problem is finding which Cell contains a coordinate, GRID is fine. If your primary problem is repeatedly walking a graph of neighbouring global cells, a specialist tessellation with uniform topology may be considerably better. Matlas prioritised containment because civil identity depends on it; it did not make uniform adjacency foundational.</p>
+<p>This is also why GRID is plainly <strong>not the best possible computer grid</strong>. A machine-first spatial index has no reason to expose Quad, Zand, Province, Sector, Tile and Click as a humanly legible civil hierarchy. It can optimise much harder for compact identifiers, recursive resolution, data locality, neighbourhood queries and high-volume computation.</p>
+<p>Some mature spatial indexes already demonstrate how powerful that approach can be. A future Martian computing platform may well use one internally, while still carrying a GRID identity when persistent civil reference matters.</p>
+<p>BAR makes the same kind of compromise lower down. Its few-metre Cell is intentionally cruder than precision navigation, surveying or robotics. A rover may know its pose to centimetres while inhabiting a BAR Cell several metres across. That is not a failure of resolution; it is where BAR chooses to stop.</p>
+<p>Making universal Cells much smaller would increase precision while solving a problem that specialist systems already solve better. Making them much larger would weaken the value of the address for emergency response, equipment location and exact delivery. Few metres is a civil-operational judgement. Real use may eventually tell us that four metres was slightly too much or too little. The choice is reasoned; it is not a physical constant.</p>
+<p>Triplet carries a different sort of cost. Machine identifiers do not care about accents, familiarity, homophones, spelling or memory. Human words care about all of them.</p>
+<p>Three words make BAR speakable by introducing the untidiness of language. A tightly curated vocabulary improves distinction while reducing lexical freedom. A larger vocabulary buys capacity and creates more opportunities for confusion. Three words are shorter than four and place more pressure on each lexical position.</p>
+<p>There is no free configuration. Triplet chooses a balance, and whether people actually like that balance remains an empirical question.</p>
+<p>One final trade is quieter but worth recording. Persistent civil identity creates maintenance work. Freezing GRID to a civil reference realisation prevents scientific improvements from silently moving addresses, but future scientific coordinates then need reliable transformations back into that frozen frame.</p>
+<p>Persistence protects history by creating an obligation to preserve the bridge to it. That is a cost worth paying only if persistent civil identity is genuinely worth having.</p>
+<p>Matlas assumes that it is.</p>
+<h2>One layer among several</h2>
+<p>The trade-offs become much easier to judge once Matlas’s scope is equally clear.</p>
+<p>Its basic architecture remains:</p>
+<p><strong>measurement → persistent spatial identity → governance and culture</strong></p>
+<p>Matlas occupies the middle.</p>
+<p>Coordinates and scientific reference frames remain underneath it because they measure position more fundamentally and, where necessary, much more precisely. Matlas is built from that measurement layer; it cannot sensibly replace its own foundation.</p>
+<p>Terrain remains separate because an address does not describe the physical route to it. Two neighbouring BAR Cells might be only metres apart in plan view and separated by a cliff. One could lie on a gentle plain while another crosses terrain no sensible rover would attempt.</p>
+<p>BAR tells you <strong>where</strong>. Terrain and navigation help determine <strong>how to get there</strong>.</p>
+<p>GIS remains separate because Matlas is not an analytical environment. A Martian GIS might combine geology, elevation, infrastructure, hazards, population, GRID boundaries, BAR-addressed assets and political overlays in one application. Matlas supplies some of the references; the GIS does the analysis.</p>
+<p>DGGS and specialist machine indexes remain separate for the opposite reason: they may solve computational geometry better than GRID does. Equal-area analysis, deep recursive indexing, regular neighbour operations and enormous spatial datasets can justify geometries with very different priorities.</p>
+<p>Coexistence is not a consolation prize. It is the intended architecture.</p>
+<p>The same discipline applies above Matlas. A cadastral parcel is a legal object. It may follow GRID boundaries if that proves convenient, or cut diagonally across them if that better describes a legitimate property interest. Nothing in the Click determines who owns it.</p>
+<p>A political jurisdiction may contain whole Provinces, fractions of Sectors or an irregular territory bearing little resemblance to GRID. Emergency services, utilities and transport operators can draw different operating regions over the same ground and change them whenever their organisations change. GRID stays put. Their boundaries do not have to.</p>
+<p>Local addressing is perhaps the easiest case. A mature settlement will develop buildings, entrances, corridors, streets, districts and conventions appropriate to the place that actually gets built. Those local addresses will usually be much better for ordinary human conversation than a global technical address.</p>
+<p>If somebody invites you to <strong>14 Copernicus Lane</strong>, asking for the BAR Cell before agreeing to dinner would indicate a technically impressive but socially questionable deployment of Matlas.</p>
+<p>BAR remains useful underneath. The local address can resolve to the common Cell when software, emergency services or external organisations need it.</p>
+<p>Cultural names sit further away still. GRID and Triplet do not name Mars in the human sense. A settlement name, a memorial, an unofficial district or a café nickname can acquire meanings no formal address architecture should try to create.</p>
+<p>The important property is not that all these systems share boundaries. It is that they can refer to the same place.</p>
+<p>Universal coverage does not require universal use. Every point on Mars can have a Matlas identity. Most conversations will not need one.</p>
+<h2>What is actually unfinished?</h2>
+<p>Once deliberate trade-offs and deliberate exclusions are removed from the pile, the remaining open issues become much easier to understand.</p>
+<p>The first is a genuine limitation:</p>
+<p><strong>Matlas is two-dimensional.</strong></p>
+<p>GRID identifies areas of the Martian surface. BAR refines them into few-metre surface Cells. Neither presently distinguishes two destinations sharing the same horizontal footprint but occupying different heights or depths. That will eventually matter.</p>
+<p>Permanent Mars may contain mines, tunnels, lava tubes, buried habitats, multi-level industrial sites and vertically dense settlements. A BAR Cell could identify the entrance or surface footprint while failing to distinguish a control room twenty metres below another facility at the same horizontal location.</p>
+<p>The obvious response is to append altitude. The sensible response is to resist doing that until the requirement is understood.</p>
+<p>A universal vertical address has choices of its own. What is zero? Is depth absolute or local? Should a mine use geometric height, named levels or a topological tunnel network? How should a global vertical reference interact with construction datums inside habitats?</p>
+<p>Adding another field is trivial. Deciding what it means is architecture.</p>
+<p>So two dimensions are a known scope limit. A future vertical or subsurface layer is a possible extension, not a missing line in the current specification.</p>
+<p><strong>Polar adjacency</strong> belongs in a different category. P1’s T-junctions are an accepted geometric trade-off. A complete normative neighbour API across them is unfinished interface work.</p>
+<p>That distinction is useful because the geography already exists. Every coordinate has one owner. Bounds can be reconstructed. Existing identities do not depend on having a function that returns a perfectly specified list of neighbouring units. Such an API would be valuable for routing and analysis, but it can be added without moving a Click.</p>
+<p>The most important unfinished evidence concerns humans.</p>
+<p>Matlas can prove coverage, test boundaries and reproduce machine identifiers. It cannot prove that people will find six GRID levels intuitive, that few-metre Cells are the ideal practical resolution or that Triplet will work as well in real radio traffic as it does on paper.</p>
+<p>Those are human-factors questions. They require human beings.</p>
+<p>Orientation, learning time, recall, transcription, radio noise, stress, different accents, speech recognition and error recovery can all be tested. Until that happens, the human-facing choices should be described accurately: <strong>designed for usability, not proven usable</strong>.</p>
+<p>The layered architecture gives us room to learn. If one mnemonic term performs badly, it can change without moving the geography. If one Triplet vocabulary creates too many confusions, a revised language profile can preserve the canonical Cell underneath. If emergency services eventually prefer a specialist phonetic interface, they can have one.</p>
+<p>Human interfaces are allowed to improve faster than spatial identity.</p>
+<p>Language profiles create related implementation work. English cannot simply be translated word-for-word into every other language and declared multilingual. Different languages have different phonology, morphology, frequencies, scripts and ambiguities. Each serious profile will require its own lexical design and testing while resolving to the same canonical BAR location.</p>
+<p>That is work. It is not new geography.</p>
+<p>Long-term governance also remains unfinished, but there is little value in attempting to solve it here. A durable standard will eventually need maintained specifications, reference transformations, version history, conformance material and institutions capable of preserving them. Chapter 21 owns that problem.</p>
+<p>For this audit it is enough to record that good geometry does not create its own stewardship.</p>
+<h2>Keep the categories straight</h2>
+<p>So the unfinished ledger is considerably smaller than the old manuscript made it appear.</p>
+<p>Unequal area is a <strong>chosen trade-off</strong>. The 72° seam is a <strong>chosen trade-off</strong>. P1’s awkward neighbourhood topology is a <strong>chosen trade-off</strong>; the neighbour API around it is <strong>unfinished interface work</strong>.</p>
+<p>Specialist machine indexes outperforming GRID is <strong>not a defect</strong>. They solve another problem. Terrain-aware navigation, GIS analysis, cadastral ownership, political jurisdiction and local addresses are <strong>outside Matlas’s scope</strong>.</p>
+<p>Two-dimensionality is a <strong>known limitation</strong>. Vertical addressing is a <strong>possible future extension</strong>. Human usability is an <strong>empirical question</strong>. Additional language profiles are <strong>implementation work</strong>. Long-term stewardship is <strong>institutional work</strong>.</p>
+<p>Those distinctions matter because each calls for a different response. A design trade-off may require living with the cost. An interface can be added. An empirical question needs evidence. An external system should remain external.</p>
+<p>A core geometric mistake, if one is ever discovered, would demand something more serious: a new major version rather than an invisible correction. A useful test is whether a proposed change alters which canonical Matlas identity belongs to a physical location.</p>
+<p>If it does, it touches the core geography. If it does not, it can usually evolve around that stable centre.</p>
+<p>That is how Matlas should be capable of learning without waking up one morning somewhere else.</p>
+<h2>Back to the brief</h2>
+<p>The right judgement therefore takes us back to the requirements that produced the architecture.</p>
+<p>We wanted something anchored to Mars, exhaustive in coverage, coherent across several scales, persistent over time, thin enough to coexist with changing human geography, operational for machines and people, and reproducible without dependence on one provider. Those priorities explain the compromises.</p>
+<p>Direct angular geometry aids legibility and reconstruction while surrendering equal area. A frozen civil frame preserves addresses while creating transformation work. P1 protects useful polar scale while weakening topological regularity. BAR provides common fine location without chasing engineering precision. Triplet makes the location speakable by accepting the complexity of language.</p>
+<p>The scope remains thin enough that GIS, terrain, analytics, property, politics and local culture can continue solving their own problems.</p>
+<p>These are not unfortunate imperfections surrounding some ideal version of Matlas. They are the consequences of choosing what to optimise.</p>
+<p>Change the brief and the answer should change.</p>
+<p>A climate-analysis architecture might start with equal area. A system built solely for machines could remove much of the visible civil hierarchy. A Mars permanently occupied by three isolated bases might never need a planet-wide operating geography at all. Different requirements should produce different systems.</p>
+<p>That is requirements-led design working properly.</p>
+<p>Matlas makes a narrower claim: for a Mars moving from exploration towards distributed settlement, there is value in a thin, persistent spatial layer between planetary measurement and the richer geography that civilisation will create above it.</p>
+<p>The architecture has costs, and they are now explicit. Its boundaries are also explicit. Some human claims remain unproven, and some implementation and institutional work remains to be done.</p>
+<p>Against the brief we began with, I think the trade is good.</p>
+<p><strong>That is the last defence this book needs to make.</strong></p></div><nav aria-label="Reading order" class="next-prev"><a href="chapter-17.html">← Three Words for Mars</a><a href="chapter-19.html">When the Grid Disappears →</a></nav></article></main></div><footer class="imprint">© JB Bullock 2026. All rights reserved. Book text and artwork are not licensed under the technical specification or software licences. · <a href="index.html">Book contents</a></footer></body></html>

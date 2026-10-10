@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Three Words for Mars — Matlas</title><meta content="Send me your Mars BAR" name="description"/><link href="../assets/book.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "Three Words for Mars", "isPartOf": {"@type": "Book", "name": "Matlas: An Operational Map of Human Mars", "author": {"@type": "Person", "name": "JB Bullock"}}, "inLanguage": "en", "copyrightHolder": "JB Bullock", "copyrightYear": 2026, "creativeWorkStatus": "First Public Web Edition 1.0 · October 2026"}</script><link rel="canonical" href="https://iamjbcom.github.io/matlas/book/chapter-17.html"/><meta property="og:url" content="https://iamjbcom.github.io/matlas/book/chapter-17.html"/><meta property="og:type" content="article"/></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="top"><a class="brand" href="index.html">MATLAS</a><span class="preview-pill">FIRST PUBLIC WEB EDITION</span><span class="minor">Operating Architecture · JB Bullock</span></header><div class="layout"><nav aria-label="Mobile book contents" class="mobile-chapters"><details><summary>Contents — jump to a chapter</summary><nav aria-label="Chapters, mobile menu" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="page" class="toc-item selected" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></details></nav><aside class="sidebar"><nav aria-label="Book chapters" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="page" class="toc-item selected" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></aside><main class="main" id="content"><article class="article"><div class="eyebrow">Chapter 17 · Part 4</div><h1>Three Words for Mars</h1><p class="dek">Send me your Mars BAR</p><div class="prose"><p>At the end of the last chapter, Bar had become precise enough for machines.</p>
+<p>A position on Mars could be reduced to one Click, one Court and one Cell, then expressed as a deterministic forty-four-bit identity. The result was compact, reversible and independent of a central registry.</p>
+<p>It was also a fairly dreadful thing to say aloud.</p><figure aria-label="Figure 18: One Place, Three Words" class="book-figure" id="figure-18"><img alt="Five-stage conceptual illustration of a physical location becoming a BAR address and then a three-word language rendering." aria-describedby="figure-18-description" decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/image57.webp" width="1200"/><figcaption><span class="figure-id">Figure 18</span> · One Place, Three Words</figcaption><aside aria-label="Figure 18 editorial note" class="figure-note" role="note"><strong>Illustration note</strong><span> — The three-word rendering is conceptual. The underlying BAR machine format is ratified; the MB3-EN1 vocabulary and production word assignments are not yet released.</span></aside><details class="figure-description"><summary>Read a description of this illustration</summary><p id="figure-18-description">The intended layering is: physical location → canonical BAR machine identity → M3B language profile → three-word human rendering of the same location. The MB3-EN1 vocabulary and its production word assignments are not yet released.</p></details></figure>
+<p>That matters because addresses eventually escape databases. A technician reads one over a radio. An emergency caller repeats one under stress. Somebody copies one from a screen. A visitor remembers one long enough to walk across a settlement. A human notices that something sounds wrong before pressing <em>send</em>.</p>
+<p>Machines need canonical identity. People need language.</p>
+<p>The final layer of Bar is therefore not another piece of geography. It is a human interface laid over geography that already exists.</p>
+<p>It is called <strong>Triplet</strong>.</p>
+<div id="mars-bar-triplet-in-action-group">
+<figure aria-label="Mars BAR Triplet in action: field exploration" class="book-figure book-figure-supporting" id="mars-bar-triplet-panel-1"><img alt="Mobile screen showing a Mars BAR Triplet used for surface exploration, with addresses attached to a dune ridge, rover cargo and a habitat work area." decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/mars-bar-triplet-panel-1.webp" width="418"/><figcaption><span class="figure-id">Supporting illustration</span> · Triplet in action I — surface exploration</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p>A mobile interface displays Triplet labels over a surface scene, showing how small ground cells can be marked for field exploration and day-to-day operations.</p></details></figure>
+<figure aria-label="Mars BAR Triplet in action: emergency and science" class="book-figure book-figure-supporting" id="mars-bar-triplet-panel-2"><img alt="Mobile screen showing several Mars BAR Triplet examples for surface work, emergency sharing and science locations." decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/mars-bar-triplet-panel-2.webp" width="419"/><figcaption><span class="figure-id">Supporting illustration</span> · Triplet in action II — use cases</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p>A multi-card interface illustrates several practical Triplet uses, including exploration, emergency response, science work and cargo guidance.</p></details></figure>
+<figure aria-label="Mars BAR Triplet in action: habitat logistics" class="book-figure book-figure-supporting" id="mars-bar-triplet-panel-3"><img alt="Mobile screen showing a Mars habitat scene with a Mars BAR Triplet attached to equipment placed beside an airlock." decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/mars-bar-triplet-panel-3.webp" width="418"/><figcaption><span class="figure-id">Supporting illustration</span> · Triplet in action III — habitat logistics</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p>A habitat-side example shows Triplet being used to mark a precise equipment drop or logistics point close to an airlock.</p></details></figure>
+</div>
+<h2>The words are not the place</h2>
+<p>A Bar Cell exists whether or not anybody has assigned English words to it. Its canonical identity comes from GRID and Bar geometry, not from language.</p>
+<p>Triplet takes that existing identity and renders it as three words:</p>
+<p><strong>W1 · W2 · W3</strong></p>
+<p>Another language can use different words. A specialist interface could use something else entirely. Future software may display a building name instead when one is available.</p>
+<p>None of those choices moves the Cell.</p>
+<p>This separation matters because language changes much faster than geography. Vocabulary becomes dated. Pronunciations shift. Particular words turn out to be awkward across accents. A better speech-recognition system may expose problems that were invisible when the first profile was designed.</p>
+<p>If the words <em>are</em> the geography, changing them becomes dangerous. If the words are an interface to a stable Bar identity, they can improve while the place remains put.</p>
+<p><strong>The place is canonical. The words are an interface.</strong></p>
+<p>Triplet is the public three-word interface. The classifier and encoding system underneath it is called <strong>M3B</strong>. The engineering identifier for the first US-English profile is <strong>MB3-EN1</strong>.</p>
+<p>Most readers will never need the last of those names. Implementers will.</p>
+<h2>Three words is not a new idea</h2>
+<p>The obvious comparison is what3words.</p>
+<p>That system demonstrated something important on Earth: three ordinary words can make a very small piece of a planet much easier for a human to communicate than a long coordinate or machine identifier. That central insight is excellent, and Bar keeps it.</p>
+<p>The differences begin underneath.</p>
+<p>what3words is a proprietary addressing system. Its word combinations are allocated through a commercial architecture, and the words themselves do not carry geographical meaning. A perfectly valid address may sound no more geographically plausible for London than for Lagos.</p>
+<p>The system does make serious efforts to reduce dangerous similarity among nearby addresses, and it uses language-specific vocabularies rather than crude word-for-word translation. Those are sensible design choices. Bar adopts the principles where they help.</p>
+<p>Mars nevertheless gives us an opportunity to ask a slightly different question. If we are designing a planetary address layer before the planet has billions of existing addresses, can the words do more than merely provide enough combinations? Can they help somebody notice an error, carry some geographical context, remain independently reproducible and make confusion resistance part of the structure itself?</p>
+<p>Triplet is an attempt to answer yes.</p>
+<h2>The first word tells you something</h2>
+<p>The first word is not drawn from one enormous undifferentiated vocabulary. Its semantic family depends on where the location lies on Mars.</p>
+<p>For most of the planet, GRID already gives us four broad latitude regions: the Blue, Green, Gold and Red Belts. Triplet assigns one W1 semantic family to each:</p>
+<div class="table-scroll"><table><thead>
+<tr><th scope="col"><p><strong>GRID region</strong></p></th><th scope="col"><p><strong>Latitude</strong></p></th><th scope="col"><p><strong>W1 family</strong></p></th></tr></thead><tbody>
+<tr><td><p>Blue Belt</p></td><td><p>30°–72°N</p></td><td><p><strong>Action</strong></p></td></tr>
+<tr><td><p>Green Belt</p></td><td><p>0°–30°N</p></td><td><p><strong>Living</strong></p></td></tr>
+<tr><td><p>Gold Belt</p></td><td><p>0°–30°S</p></td><td><p><strong>Made</strong></p></td></tr>
+<tr><td><p>Red Belt</p></td><td><p>30°–72°S</p></td><td><p><strong>Nature</strong></p></td></tr>
+</tbody></table></div>
+<p>An address in the Blue Belt therefore begins with an <strong>Action</strong> word. Green begins with <strong>Living</strong>, Gold with <strong>Made</strong>, and Red with <strong>Nature</strong>.</p>
+<p>These are categories of vocabulary, not descriptions of the landscape. An Action word does not mean anybody is actually running, lifting or building at that location. A Nature word does not imply the Cell contains a tree, which would be an ambitious inference on present-day Mars.</p>
+<p>The semantic family is an encoding cue. It tells the listener something about the broad geography of the address before the address has even been fully decoded.</p>
+<p>The two polar Quads receive their own first-word families: <strong>Crown</strong> in the north and <strong>Root</strong> in the south.</p>
+<p>That gives all six broad W1 regions deliberately different semantic character. A first word that clearly belongs to Living should therefore look suspicious if somebody claims the address lies in the southern mid-latitudes.</p>
+<p>The words begin doing error detection before software gets involved.</p>
+<h2>The second word turns the planet</h2>
+<p>Latitude is only half the broad geography.</p>
+<p>Mars is also divided into twenty-four 15° longitude Zones. For Triplet, four adjacent Zones are grouped into one 60° sector.</p>
+<p>Across regular Mars, those six sectors use six W2 semantic families:</p>
+<div class="table-scroll"><table><thead>
+<tr><th scope="col"><p><strong>Longitude</strong></p></th><th scope="col"><p><strong>W2 family</strong></p></th></tr></thead><tbody>
+<tr><td><p>0°–60°E</p></td><td><p><strong>Person</strong></p></td></tr>
+<tr><td><p>60°–120°E</p></td><td><p><strong>Home</strong></p></td></tr>
+<tr><td><p>120°–180°E</p></td><td><p><strong>Settlement</strong></p></td></tr>
+<tr><td><p>180°–240°E</p></td><td><p><strong>Journey</strong></p></td></tr>
+<tr><td><p>240°–300°E</p></td><td><p><strong>Land</strong></p></td></tr>
+<tr><td><p>300°–360°E</p></td><td><p><strong>Sky</strong></p></td></tr>
+</tbody></table></div>
+<p>Combine W1 and W2 and the broad regular Quad is already apparent.</p>
+<p>Suppose a Triplet begins with an Action word followed by a Settlement word. Action tells us <strong>30°–72° north</strong>. Settlement tells us <strong>120°–180° east</strong>.</p>
+<p>Before examining the third word — indeed before fully decoding the first two — we already know the general part of Mars to which the address belongs.</p>
+<p>That is not enough to locate a Cell. It is enough to make nonsense easier to spot.</p>
+<h2>An example</h2>
+<p>Take a location at approximately:</p>
+<p><strong>41°N, 140°E</strong></p>
+<p>Forty-one degrees north lies in the Blue Belt, so its first word must come from <strong>Action</strong>. One hundred and forty degrees east falls in the 120°–180° sector, so its second word must come from <strong>Settlement</strong>.</p>
+<p>The resulting Cell address therefore has the structure:</p>
+<p><strong>[Action word] · [Settlement word] · [Cell word]</strong></p>
+<p>The exact three words depend on the location's full Bar identity, its finer GRID context, its Safety Signature and the final lexical assignment. But the semantic grammar is already fixed.</p>
+<p>If somebody transcribes the first word as something from Living, the result has crossed from northern mid-latitude Mars into northern low-latitude Mars before we have considered anything else. If the second word changes from Settlement to Sky, the address has apparently travelled more than a hundred degrees of longitude.</p>
+<p>That is useful information for a human.</p>
+<p>A random three-word assignment cannot offer it.</p>
+<h2>The poles need their own vocabulary</h2>
+<p>The polar regions are different enough geometrically that GRID already treats them separately. Triplet does the same semantically without creating a different address grammar.</p>
+<p>At the North Pole, W1 is <strong>Crown</strong>. Longitude then selects among six W2 families:</p>
+<p><strong>Thought, Sound, Light, Air, Cosmos, Time</strong></p>
+<p>At the South Pole, W1 is <strong>Root</strong>, followed by:</p>
+<p><strong>Growth, Soil, Stone, Ore, Heat, Core</strong></p>
+<p>So a location at roughly <strong>80°N, 250°E</strong> has the grammar:</p>
+<p><strong>[Crown word] · [Cosmos word] · [Cell word]</strong></p>
+<p>while a location at <strong>80°S, 90°E</strong> becomes:</p>
+<p><strong>[Root word] · [Soil word] · [Cell word]</strong></p>
+<p>Again, the words do not describe the terrain. <em>Cosmos</em> is not claiming that the northern polar site has a particularly fine view of the heavens, and <em>Soil</em> does not certify agricultural potential in the south.</p>
+<p>They are mnemonic namespaces.</p>
+<p>The point is not poetry. It is distinction.</p>
+<h2>Bands and Zones still matter</h2>
+<p>The semantic families are deliberately broad.</p>
+<p>They do not reduce every regular Band to one visible vocabulary list or every Zone to a single obvious set of second words. That would make the system intuitive at first glance but would not provide nearly enough safe combinations for the full address space.</p>
+<p>The finer GRID structure instead participates in the deterministic lexical encoding beneath the visible semantic family.</p>
+<p>There is a useful piece of geometry behind this. Action and Nature each span <strong>seven six-degree Bands</strong>, while Living and Made span <strong>five</strong>. That is why the W1 vocabularies do not all require the same capacity. Each regular W2 family, by contrast, spans <strong>four adjacent 15° Zones</strong>, producing one 60° longitude sector, so the six regular W2 namespaces can be equal-sized.</p>
+<p>The reader therefore gets two levels of information at once. At the visible level, the first two words provide broad geographic orientation. Underneath, the exact Band, Zone, Click position and Bar Cell help determine which valid word inside those semantic namespaces is assigned.</p>
+<p>The result is not a sentence describing the location.</p>
+<p>It is structured redundancy, and redundancy is valuable when humans are involved.</p>
+<h2>The third word does most of the fine work</h2>
+<p>W3 completes the address.</p>
+<p>For a normal Cell Triplet, it comes from the <strong>Cell vocabulary</strong>. Unlike W1 and W2, its principal job is not broad geographic orientation because by the time the system reaches W3 much of the relevant context has already been established.</p>
+<p>This allows the same surface word to be reused carefully in different parts of the encoding space where the decoder already knows which context applies. That is important because English does not contain an unlimited supply of short, familiar, pronounceable, semantically harmless and acoustically distinct words.</p>
+<p>A naïve three-word system can pretend the dictionary is larger than it really is. An operational one cannot.</p>
+<p>Triplet therefore treats vocabulary as a finite engineering resource. Words can be reused where the context makes the reuse unambiguous; they cannot be reused carelessly inside the context where they compete.</p>
+<h2>Courts get a special ending</h2>
+<p>A Cell is not always the most useful human reference.</p>
+<p>Sometimes the intended destination is a Court: a site-sized area of roughly tens of metres rather than one particular few-metre Cell. Triplet handles that without inventing another address syntax.</p>
+<p>Court-level addresses use the same first two words, but W3 comes from a dedicated <strong>Place/Structure</strong> vocabulary reserved for Courts.</p>
+<p>So a Court at roughly <strong>20°S, 70°E</strong> has the structure:</p>
+<p><strong>[Made word] · [Home word] · [Place/Structure word]</strong></p>
+<p>A Cell inside that same Court uses a normal Cell W3 instead.</p>
+<p>The final word can therefore reveal whether the address refers to the wider Court or the precise Cell within it. The Court vocabulary remains exclusive: a Place/Structure ending is not quietly reused as an ordinary Cell ending elsewhere in the same English profile.</p>
+<p>That keeps the distinction clean.</p>
+<h2>The dangerous words problem</h2>
+<p>At this point the design stops being primarily about dictionaries and becomes about mistakes.</p>
+<p>Human language contains many words that are perfectly acceptable in ordinary conversation and terrible in an address system. Some are exact homophones:</p>
+<p><strong>course / coarse</strong></p>
+<p><strong>plane / plain</strong></p>
+<p><strong>root / route</strong>, in accents where they converge.</p>
+<p>Others differ by one sound, one letter or one morphological ending. Some are visually similar when typed, some become close when spoken quickly, and some are easy for a particular speech-recognition system to confuse.</p>
+<p>Accent adds another layer. Words that are comfortably distinct for one speaker may converge for another. A word may also be technically valid and simply too obscure: a caller who has never encountered it is more likely to hear the familiar word they expected than the unfamiliar one actually spoken.</p>
+<p>A word list that looks excellent on a spreadsheet can therefore behave rather badly over a radio.</p>
+<p>Triplet treats that as a first-order design problem.</p>
+<h2>Familiar is not enough</h2>
+<p>Common vocabulary is generally helpful. A familiar word is easier to recognise, easier to repeat and less likely to be silently replaced by something the listener already knows.</p>
+<p>But frequency alone does not make a word safe. Two extremely common words can be dangerously similar. A less common word may be exceptionally distinctive. A familiar word may have several unrelated senses that weaken its semantic classification, while a short word may be easy to remember and poor over noisy audio.</p>
+<p>M3B therefore does not rank vocabulary on one dimension.</p>
+<p>The first English profile draws on three principal public lexical resources.</p>
+<p><strong>Open English WordNet</strong> provides senses and semantic relationships.</p>
+<p><strong>BNC/COCA frequency data</strong> provides evidence about familiarity and ordinary use.</p>
+<p><strong>CMUdict</strong> provides General-American pronunciation data.</p>
+<p>US English is used as the canonical spelling profile, with explicit spelling normalisation rather than broad guesses about how British forms ought to be Americanised.</p>
+<p>The purpose is not linguistic perfection. It is reproducibility.</p>
+<p>If two people build the English vocabulary compiler from the same frozen sources and rules, they should start from the same evidence.</p>
+<h2>Semantics has to be real</h2>
+<p>The W1 and W2 categories would be pointless if words were placed into them merely because capacity was needed.</p>
+<p>An Action word should have a defensible action-related sense. A Home word should have a defensible home-related sense. A Stone word should genuinely belong to the Stone family.</p>
+<p>The system does allow a word to appear in more than one semantic family where its senses genuinely justify it. Natural language overlaps, and trying to force every English word into exactly one conceptual drawer would create artificial scarcity and some fairly tortured definitions.</p>
+<p>What matters is that the classification is defensible.</p>
+<p>A word is not admitted into <em>Nature</em> because an algorithm ran out of Nature vocabulary and the word once appeared within three links of <em>forest</em> in a lexical graph.</p>
+<p>Capacity is an engineering constraint.</p>
+<p>It does not get to rewrite English.</p>
+<h2>Pronunciation matters as much as spelling</h2>
+<p>Every production word in the English profile must have usable pronunciation evidence.</p>
+<p>Exact homophones are especially important. If two spellings sound identical inside a decoding context, preserving both does not create useful additional vocabulary; it creates two ways to make the same noise and hope the listener guesses correctly.</p>
+<p>The compiler therefore collapses exact homophones where they could compete.</p>
+<p>Near-homophones require more judgement. A useful first test is phonetic edit distance: how many individual sound changes separate one pronunciation from another? One-phoneme neighbours deserve attention, but that test is not sufficient by itself.</p>
+<p>Pronunciation dictionaries simplify accents. People reduce speech under stress. Radio channels lose detail. Automatic speech recognition has its own peculiar confusions.</p>
+<p>Phonetic distance is therefore treated as one layer in a broader <strong>confusability graph</strong>, alongside spelling, morphology, accent evidence and, where available, real speech-recognition evidence.</p>
+<p>This is one of the places where the engineering work becomes less glamorous and more useful.</p>
+<p>A three-word address system is only as good as the mistakes it prevents.</p>
+<h2>Safety Groups</h2>
+<p>The more distinctive part of M3B is that confusable words are not merely identified. Their placement is constrained by the geography.</p>
+<p>Every Click receives a deterministic <strong>Safety Colour</strong> derived from its position. Sixteen colours are sufficient to ensure that directly neighbouring Clicks do not share the same colour.</p>
+<p>The colour is not something a resident needs to see painted across the map. It is encoding state.</p>
+<p>Within the Click, the Cell contributes its fine row and fine column. Together, those values form a <strong>Safety Signature</strong> describing the local context in which the lexical address will be interpreted.</p>
+<p>M3B then divides the W1, W2 and W3 vocabularies into <strong>Safety Groups</strong> associated with parts of that signature.</p>
+<p>W1 uses <strong>32 Safety Groups</strong>.</p>
+<p>W2 uses <strong>32 Safety Groups</strong>.</p>
+<p>Cell W3 uses <strong>1,024 Safety Groups</strong>.</p>
+<p>Court W3 has its own smaller group structure.</p>
+<p>The important idea is not the arithmetic. It is what the grouping lets us do.</p>
+<h2>Put confusion where it cannot hurt locally</h2>
+<p>Suppose two words are judged dangerously similar.</p>
+<p>A naïve strategy might try to place them as far apart on Mars as possible. That helps, but it is surprisingly hard to make a universal guarantee from distance alone. Every vocabulary evolves, every language has awkward pairs and a planetary allocation eventually contains a great many combinations.</p>
+<p>M3B takes a more structural approach.</p>
+<p>Confusable alternatives are kept inside the same relevant Safety Group rather than scattered across groups that could represent neighbouring local states. Because adjacent Clicks have different Safety Colours, and because fine position contributes to the Safety Signature, a substitution among words deliberately grouped as confusable is prevented from casually turning into a neighbouring valid address.</p>
+<p>The system is therefore not merely asking:</p>
+<p><em>How far apart can we place similar words?</em></p>
+<p>It is also asking:</p>
+<p><em>Can we arrange the encoding so that the most dangerous substitutions are structurally unable to mean the place next door?</em></p>
+<p>Longer-range geographic separation can still be improved during final assignment.</p>
+<p>But local safety is not left entirely to luck.</p>
+<h2>Why that matters in an emergency</h2>
+<p>Imagine an emergency caller repeats a Triplet and one word is misheard.</p>
+<p>The worst failure is not necessarily an address that fails to decode. That is annoying, but visible.</p>
+<p>The more dangerous failure is a different address that looks completely valid and lies just far enough away for responders to go to the wrong side of a building or the wrong piece of open terrain.</p>
+<p>The semantic families reduce one kind of error. Safety grouping attacks another. Software can add a third layer by presenting context, suggesting alternatives or warning when an entered address disagrees strongly with the user's approximate location.</p>
+<p>These mechanisms complement one another.</p>
+<p>No address architecture should promise that humans will never make mistakes. It should make ordinary mistakes less likely to become silently plausible destinations.</p>
+<h2>The vocabulary has to fit the geometry</h2>
+<p>The lexical architecture is large enough that intuition alone cannot populate it.</p>
+<p>The current English design requires tens of thousands of <strong>word memberships</strong> across W1, W2 and W3. Membership is not the same as distinct spelling: a word can legitimately appear in separate decoding contexts where the context itself prevents ambiguity.</p>
+<p>This is particularly important for W3, where carefully controlled reuse keeps the distinct vocabulary burden manageable.</p>
+<p>The target architecture contains six W1 families:</p>
+<p><strong>Action, Living, Made, Nature, Crown, Root.</strong></p>
+<p>Regular W2 contains:</p>
+<p><strong>Person, Home, Settlement, Journey, Land, Sky.</strong></p>
+<p>Polar W2 adds twelve specialised families:</p>
+<p><strong>Thought, Sound, Light, Air, Cosmos, Time, Growth, Soil, Stone, Ore, Heat, Core.</strong></p>
+<p>W3 supplies the large Cell vocabulary, plus <strong>256 dedicated Place/Structure endings</strong> for Court addresses.</p>
+<p>The final vocabulary therefore cannot sensibly be curated by one person scrolling through a dictionary and ticking attractive words.</p>
+<p>It needs a compiler.</p>
+<h2>Building the English profile</h2>
+<p>The MB3-EN1 compiler begins by freezing its source material. A vocabulary cannot be called reproducible if today's run silently uses a newer dictionary, a changed frequency list or a revised pronunciation source.</p>
+<p>The compiler then normalises candidate spellings into the canonical US-English profile and applies basic form rules. The current design requires alphabetic words of at least four letters.</p>
+<p>Each surviving word becomes part of a master lexical ledger recording the things later decisions need: spelling, lemma, morphological family, senses, semantic evidence, familiarity, pronunciations, syllables, phonetic signatures, spelling similarity, Court suitability, sensitivity flags and source provenance.</p>
+<p>Then the actual selection begins.</p>
+<p>W1 and W2 candidates are scored against their semantic families. Court and Cell candidates are separated. Exact homophones are collapsed inside the contexts where they would compete, and confusability relationships are built.</p>
+<p>Candidate pools are deliberately larger than the production requirement so that weak words can be replaced without destabilising the whole system.</p>
+<p>Only then are words packed into Safety Groups.</p>
+<h2>Do not curate eighty thousand slots by hand</h2>
+<p>This part of the project produced an important practical lesson.</p>
+<p>At first glance, a system containing tens of thousands of lexical memberships appears to require tens of thousands of individual editorial decisions. That would be an excellent way to spend several months becoming unusually well acquainted with obscure English nouns.</p>
+<p>It is also unnecessary.</p>
+<p>The right unit of human attention is the <strong>exception</strong>, not the word.</p>
+<p>Most mechanical rejection should be mechanical. Most obvious semantic classification should be reproducible. Most pronunciation checks should be automated. Most Safety-Group packing should be deterministic.</p>
+<p>The compiler should handle the ordinary cases and produce a relatively small queue where evidence genuinely conflicts or judgement is required.</p>
+<p>Human review then concentrates on questions algorithms are bad at: whether a word is actually familiar; whether its semantic sense feels natural rather than merely defensible by lexical archaeology; whether it is awkward or offensive in ordinary use; whether a technically acceptable pronunciation pair still feels unsafe; or whether a candidate is simply too specialist for broad use.</p>
+<p>That division of labour matters if Triplet is ever extended into other languages.</p>
+<p>A language profile should be engineered and reviewed.</p>
+<p>It should not become a lifetime craft project.</p>
+<h2>Reserves matter</h2>
+<p>A mature vocabulary also needs spare capacity.</p>
+<p>Suppose a word passes all of today's tests and later proves awkward in a particular accent, or speech-recognition testing finds a confusion pattern not visible in the original pronunciation graph. If every semantic family has been filled to exactly the minimum required size, replacing one word becomes painful.</p>
+<p>The compiler therefore creates reserve pools as part of the release process.</p>
+<p>A weak or conflicting production candidate can be replaced from reserve and the affected Safety Group rebuilt without reopening the whole language profile.</p>
+<p>This is mundane release engineering. It is also how standards remain maintainable.</p>
+<p>A vocabulary with no slack has confused mathematical sufficiency with operational resilience.</p>
+<h2>Assignment comes last</h2>
+<p>Only after the vocabulary has passed its semantic, familiarity, pronunciation, morphology, confusability and capacity tests should the exact word assignments be frozen.</p>
+<p>This is where the <strong>Assignment Salt</strong> appears.</p>
+<p>The salt is public. It is not a secret security key.</p>
+<p>Its purpose is to create one reproducible deterministic permutation inside the already-valid semantic and Safety architecture, rather than allowing implementation order or source-list order to decide which exact Cell receives which word.</p>
+<p>Because it is public, independent implementations can reproduce the same assignment. Because it is frozen only after the lexical release passes, changing a candidate word during curation does not needlessly disturb a supposedly final planetary mapping.</p>
+<p>The sequence matters:</p>
+<p><strong>qualify the vocabulary first; assign it second</strong></p>
+<p>That avoids a great deal of avoidable pain.</p>
+<h2>Different language, same Cell</h2>
+<p>English is only the first profile.</p>
+<p>It should not become the linguistic constitution of Mars.</p>
+<p>A future Spanish Triplet profile should not be produced by translating each English word. Nor should Mandarin, Arabic, Hindi or any other language be forced into English phonetic assumptions.</p>
+<p>Each language has its own frequency distribution, morphology, pronunciation, writing system and ambiguity. A good language profile therefore designs its own vocabulary and Safety Groups while resolving to the same canonical Bar identity.</p>
+<p>The English Triplet for a particular Cell might contain three completely different concepts from the Arabic Triplet for that Cell.</p>
+<p>That is fine.</p>
+<p>The two speakers still mean the same few metres of Mars.</p>
+<p>This is exactly why the machine identity sits underneath language. Multilingualism is difficult if words <em>are</em> the address; it is much cleaner if words are interfaces to the address.</p>
+<h2>Not a naming system</h2>
+<p>Three words can feel like names, which makes another boundary important.</p>
+<p>Triplet does not culturally name the Martian surface.</p>
+<p>An address such as:</p>
+<p><strong>[Action word] · [Settlement word] · [Cell word]</strong></p>
+<p>does not declare that the location should henceforth be known by those words. Nobody is expected to fall in love with a crater because a deterministic vocabulary compiler happened to allocate <em>carry-harbour-lantern</em> to one Cell inside it.</p>
+<p>Future inhabitants will name settlements, streets, hills, cafés, neighbourhoods and the unofficial shortcuts between them. Those names will carry memory and meaning that no protocol should try to manufacture.</p>
+<p>Triplet has a more modest job: it lets somebody who does not know the local name still communicate the exact Bar location.</p>
+<p>That keeps the principle established earlier in the book intact:</p>
+<p><strong>We name the grammar. Martians name the places.</strong></p>
+<h2>Local addresses should usually win</h2>
+<p>A mature Martian city should not force everyone to speak Triplet all day.</p>
+<p>If the café is on Copernicus Lane, people should say Copernicus Lane. If the western cargo airlock is locally called Lock Three, logistics software should be perfectly capable of displaying Lock Three. If a hospital has Ward 6, Room 14, the patient should not be reduced conversationally to a Triplet because the global addressing system happens to know where the room sits.</p>
+<p>Bar lives underneath those systems.</p>
+<p>Triplet becomes valuable when local systems do not exist, when organisations need to interoperate, when a precise fallback is required or when the user needs a human-friendly representation of the canonical location.</p>
+<p>The best universal infrastructure often spends much of its life hiding beneath better local interfaces.</p>
+<p>Chapter 19 will return to that point.</p>
+<h2>Open means more than published</h2>
+<p>There is one final difference between a useful three-word interface and infrastructure.</p>
+<p>The system has to be reproducible by somebody other than its inventor.</p>
+<p>When the English profile is complete, the public GitHub repository should contain the information required to rebuild and inspect it: source manifests, frozen lexical evidence, semantic rules, vocabulary memberships, Safety Groups, Assignment Salt, conformance vectors and reference implementations.</p>
+<p>The exact production word lists should be downloadable. The classification rules should be inspectable. The machine encoding should be public.</p>
+<p>A second implementation should be able to take the same Bar identity and derive the same Triplet without asking the original project for a lookup. Likewise, it should be possible to decode the Triplet back to the same Bar Cell offline.</p>
+<p>That is a higher bar than publishing an API.</p>
+<p>An API makes a system available.</p>
+<p><strong>A specification makes it reproducible.</strong></p>
+<p>Both are useful. Only one is enough for infrastructure intended to outlive its first provider.</p>
+<h2>The test is not whether the words are clever</h2>
+<p>Triplet will eventually attract attention because three-word addresses are visible. That is natural; the binary identity beneath them is unlikely to feature prominently in dinner conversation.</p>
+<p>But the success of the design should not be judged by whether individual word combinations sound charming.</p>
+<p>Some will. Some will sound peculiar. With trillions of possible locations, literature was never a realistic requirement.</p>
+<p>The meaningful tests are operational: can people distinguish the words and remember them long enough to use them? Do semantic families help catch errors? Does the Safety architecture reduce dangerous local substitutions? Can speech-recognition systems handle the vocabulary? Do different accents expose weaknesses? Can another implementation reproduce the same result?</p>
+<p>Those questions require testing, not admiration.</p>
+<p>Triplet is designed to be usable.</p>
+<p><strong>It will still need to prove that it is.</strong></p>
+<h2>The whole stack</h2>
+<p>We can now put Part IV together.</p>
+<p>GRID carries us from Mars to the kilometre. Bar takes the final Click and divides it into Courts and Cells. The canonical Bar identity gives each Cell a compact forty-four-bit machine reference.</p>
+<p>Triplet renders that identity into three words, while M3B determines how those words are classified, checked and assigned.</p>
+<p>The result is not one address format trying to satisfy every possible user. It is a stack.</p>
+<p>Machines can carry the canonical identity. Humans can speak Triplet. Local systems can display whatever names make sense to local people. Coordinates can continue doing precise measurement underneath them all.</p>
+<p>Each layer solves the problem it is actually good at.</p>
+<p>At the beginning of Part IV, an astronaut in distress could be narrowed down to the correct kilometre of Mars.</p>
+<p>Now the same event can resolve to a few-metre Cell, carry one stable machine identity and, when a human needs to say it, become three ordinary words.</p>
+<p><strong>The words are not the geography. They are how the geography speaks.</strong></p></div><nav aria-label="Reading order" class="next-prev"><a href="chapter-16.html">← A Place in 44 Bits</a><a href="chapter-18.html">What Matlas Gives Up →</a></nav></article></main></div><footer class="imprint">© JB Bullock 2026. All rights reserved. Book text and artwork are not licensed under the technical specification or software licences. · <a href="index.html">Book contents</a></footer></body></html>

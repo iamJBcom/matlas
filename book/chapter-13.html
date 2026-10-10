@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Where the Grid Bends — Matlas</title><meta content="Adaptive Geometry Above 72°" name="description"/><link href="../assets/book.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "Where the Grid Bends", "isPartOf": {"@type": "Book", "name": "Matlas: An Operational Map of Human Mars", "author": {"@type": "Person", "name": "JB Bullock"}}, "inLanguage": "en", "copyrightHolder": "JB Bullock", "copyrightYear": 2026, "creativeWorkStatus": "First Public Web Edition 1.0 · October 2026"}</script><link rel="canonical" href="https://iamjbcom.github.io/matlas/book/chapter-13.html"/><meta property="og:url" content="https://iamjbcom.github.io/matlas/book/chapter-13.html"/><meta property="og:type" content="article"/></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="top"><a class="brand" href="index.html">MATLAS</a><span class="preview-pill">FIRST PUBLIC WEB EDITION</span><span class="minor">Operating Architecture · JB Bullock</span></header><div class="layout"><nav aria-label="Mobile book contents" class="mobile-chapters"><details><summary>Contents — jump to a chapter</summary><nav aria-label="Chapters, mobile menu" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="page" class="toc-item selected" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></details></nav><aside class="sidebar"><nav aria-label="Book chapters" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="page" class="toc-item selected" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></aside><main class="main" id="content"><article class="article"><div class="eyebrow">Chapter 13 · Part 3</div><h1>Where the Grid Bends</h1><p class="dek">Adaptive Geometry Above 72°</p><div class="prose"><p>For most of Mars, GRID gets to be boring.</p>
+<p>That is a compliment. Below 72°, the same fixed subdivision rules can carry a location from Zand to Province, Sector, Tile and Click. The arithmetic is straightforward, the containment obvious and the geometry easy to reconstruct.</p>
+<p>At the chosen <strong>72° transition</strong>, GRID changes behaviour.</p>
+<p>Chapter 8 already established why fixed longitude subdivision becomes a poor operating geometry towards a pole. We do not need to prove that again. The engineering question now is narrower: <strong>how do we preserve useful physical scale without throwing away the hierarchy that works across the rest of Mars?</strong></p>
+<p>GRID’s answer is <strong>Polar Rule P1</strong>.</p>
+<p>Its governing idea is simpler than its implementation:</p>
+<p><strong>Keep the north–south scale. Reduce the east–west branching.</strong></p>
+<p>A polar Province remains 2° high. A Sector remains 1° high. A Tile remains 0.1°, or 6 arcminutes, high. A Click remains 1 arcminute high.</p>
+<p>What changes is the number of children created across longitude.</p>
+<p>That is enough to bend GRID around the poles.</p>
+<h2>Change only what failed</h2>
+<p>P1 starts with a deliberately conservative judgement.</p>
+<p>The hierarchy is not broken. Latitude is not broken. The angular coordinate language is not broken. The part producing the wrong operating result is the <strong>fixed number of longitude subdivisions</strong>.</p>
+<p>So that is the part P1 changes.</p>
+<p>A more radical design could replace the polar caps with a specialist projection, equal-area system or separate tessellation. That might produce cleaner polar geometry for particular analytical purposes, but it would also force the civil geography to change character at 72°.</p>
+<p>GRID does not need that.</p>
+<p>A polar Click can still sit inside a Tile, inside a Sector, Province, Zand and Quad. The same canonical hierarchy remains:</p>
+<p><strong>Quad → Zand → Province → Sector → Tile → Click</strong></p>
+<p>Only the branching within that hierarchy adapts.</p>
+<p>This is the first important property of P1: it solves a local geometric problem without exporting a new spatial language across the rest of the system.</p>
+<h2>One polar Zand</h2><figure aria-label="Figure 13: Solving the Pole" class="book-figure" id="figure-13"><img alt="Comparison of narrow polar wedges under regular subdivision and adaptive polar branching under P1." aria-describedby="figure-13-description" decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/image25.webp" width="1200"/><figcaption><span class="figure-id">Figure 13</span> · Solving the Pole</figcaption><aside aria-label="Figure 13 editorial note" class="figure-note" role="note"><strong>Illustration note</strong><span> — P1 adapts longitudinal branching to improve cell proportions; it does not make polar cells identical in size.</span></aside><details class="figure-description"><summary>Read a description of this illustration</summary><p id="figure-13-description">P1 varies east–west child counts across rows in the polar cap, while preserving the north–south angular progression and parent–child nesting. It does not guarantee equal area or equal physical dimensions.</p></details></figure>
+<p>Take one of the twenty-four Zands inside a polar Quad.</p>
+<p>At Zand level, the structure is still familiar. The polar cap uses the same twenty-four 15° longitude positions as the global Zone framework, so one polar Zand is a wedge extending from <strong>72° latitude to 90°</strong>, bounded by two meridians 15° apart.</p>
+<p>Now apply the Province level.</p>
+<p>In Regular GRID, the Zand would divide three ways across longitude, producing 5°-wide Province columns. P1 keeps the normal Province height of <strong>2°</strong>, but it no longer insists that every row contain three longitude children.</p>
+<p>Instead, it evaluates each 2° latitude row separately.</p>
+<p>For the rows from <strong>72° to 80°</strong>, P1 chooses <strong>two Provinces across</strong> the 15° wedge. Each Province therefore spans 7.5° of longitude.</p>
+<p>From <strong>80° to 90°</strong>, it chooses <strong>one Province across</strong>.</p>
+<p>So Province-level Polar GRID looks like this:</p>
+<p><strong>72–80° → two across<br/>80–90° → one across</strong></p>
+<p>Across the nine 2° rows, that produces <strong>thirteen Provinces in each polar Zand</strong>.</p>
+<p>Thirteen initially sounds odd because a regular Zand contains only nine Provinces. But the comparison is misleading: a regular Zand is 6° high and has only three Province rows, while a polar Zand spans the full 18° from 72° to the pole and therefore has nine.</p>
+<p>The useful result is not the count. It is the geometry.</p>
+<p>Near 72°, widening a Province from the regular 5° to 7.5° compensates for the reduced physical width of longitude. Farther poleward, the whole 15° Zand becomes the appropriate width for one 2°-high Province.</p>
+<p>P1 therefore allows angular width to increase as physical width contracts.</p>
+<p>The angular pattern becomes less uniform.</p>
+<p>The operating scale becomes more useful.</p>
+<h2>The same rule, all the way down</h2>
+<p>The Province example is only the first application of P1.</p>
+<p>Once the containing Province has been selected, the same logic runs again inside it. <strong>Sector rows remain 1° high</strong>, but each row may use fewer than the regular maximum of five longitude children.</p>
+<p>Inside the selected Sector, <strong>Tile rows remain 0.1° high</strong>, or 6 arcminutes, while P1 can choose anything up to the regular maximum of ten east–west children.</p>
+<p>Inside the selected Tile, <strong>Click rows remain 1 arcminute high</strong>, with up to six longitude children.</p>
+<p>The north–south ladder therefore stays exactly the same:</p>
+<p><strong>Province — 2°<br/>Sector — 1°<br/>Tile — 0.1° / 6′<br/>Click — 1′</strong></p>
+<p>Only longitude branching changes.</p>
+<p>This recursive structure is what makes P1 more than a one-off polar patch. At every level the rule takes the actual parent containing the location, preserves the normal latitude step, considers the permitted integer numbers of longitude children and chooses the best subdivision for that row.</p>
+<p>Then it descends and repeats.</p>
+<p>The hierarchy established in Chapter 11 therefore survives without needing identical sibling counts everywhere. A polar Province may contain a different number of Sectors from another polar Province; the parent-child relationship remains deterministic.</p>
+<p>P1 is adaptive, but it is not free-form.</p>
+<h2>Choosing the least-distorted option</h2>
+<p>The remaining question is how P1 decides that two longitude children are better than three, or that one is better than two.</p>
+<p>It uses physical proportion.</p>
+<p>For a candidate latitude row, call the north–south physical height:</p>
+<p><strong>H</strong></p>
+<p>Now suppose the current parent longitude span is divided into <strong>c</strong> equal children. P1 calculates the mean east–west physical width of one resulting child across the row:</p>
+<p><strong>W(c)</strong></p>
+<p>It then compares the two dimensions using a simple aspect measure:</p>
+<p><strong>D(c) = max(H / W(c), W(c) / H)</strong></p>
+<p>If mean width equals height, <strong>D = 1</strong>.</p>
+<p>If the unit is twice as wide as high, D = 2. If it is twice as high as wide, D is also 2.</p>
+<p>P1 evaluates every permitted integer value of <strong>c</strong> and chooses the one with the smallest D. An exact tie goes to the larger child count.</p>
+<p>So the formal rule says exactly what the intuitive rule said:</p>
+<p><strong>Choose the east–west subdivision that gives the least distorted physical shape.</strong></p>
+<p>The east–west width is evaluated as a <strong>mean across the complete latitude row</strong>, rather than at a single centre line. That matters because the row itself narrows as it approaches the pole. The specification contains the full expression; for the design story, the idea is enough.</p>
+<p>There is also a useful consequence of the mathematics. Planetary radius appears in both the height and width terms and cancels in the ratio. The branching topology therefore follows from the angular geometry itself rather than depending on one chosen numerical approximation for Mars’s radius.</p>
+<p>P1 is therefore optimising <strong>aspect</strong>, not exact area.</p>
+<p>That distinction is deliberate. GRID already accepted unequal area in Chapter 8. P1 is solving the more immediate polar problem: preventing units intended to operate at a particular scale from degenerating into increasingly thin strips.</p>
+<h2>Constrained adaptation</h2>
+<p>There is another important restraint in the rule.</p>
+<p>P1 cannot select any longitude width it likes.</p>
+<p>At each level it can choose only an <strong>integer number of equal children inside the existing parent</strong>, up to the maximum inherited from Regular GRID:</p>
+<p><strong>Province — 3<br/>Sector — 5<br/>Tile — 10<br/>Click — 6</strong></p>
+<p>That means every child remains wholly inside one parent and every parent remains exactly partitioned.</p>
+<p>A less constrained optimiser could produce prettier individual cells by placing boundaries wherever local geometry suggested. It would also destroy much of the nested structure that gives GRID its usefulness.</p>
+<p>P1 accepts some local imperfection instead.</p>
+<p>The hierarchy is more valuable than the perfect rectangle.</p>
+<p>This is also why the polar topology can be reconstructed from the rule rather than stored as a giant authoritative lookup table. The branching decision depends on latitude, current parent width and a small set of candidate child counts. Run the published rule and the same topology follows.</p>
+<p>That makes Polar GRID reproducible for the same reason Regular GRID is reproducible: the geography comes from published geometry rather than from access to somebody’s database.</p>
+<h2>What bending the grid costs</h2>
+<p>Variable branching is not free.</p>
+<p>If two neighbouring latitude rows choose different longitude child counts, their vertical boundaries cannot all line up. A boundary dividing two cells in one row may terminate when it reaches a row above with only one corresponding cell.</p>
+<p>That produces a <strong>T-junction</strong>.</p>
+<p>Containment remains deterministic, but neighbourhood relationships become less tidy. One polar unit can meet more than one neighbouring unit along an edge where the regular rectangular lattice would have produced a simple one-to-one relationship.</p>
+<p>MGRID:1:MARS therefore defines containment and ownership but does <strong>not</strong> attempt to specify a normative global adjacency API across every P1 T-junction.</p>
+<p>That is a genuine cost, but also a useful scope boundary.</p>
+<p>GRID’s foundational promise is that a location has one deterministic spatial identity. Routing, neighbourhood graphs and spatial-analysis interfaces can be added without moving the underlying units.</p>
+<p>There is no benefit in making the first geometry more complicated merely so version one can solve every possible problem above it.</p>
+<h2>A clean seam at 72°</h2>
+<p>P1 also creates an explicit transition.</p>
+<p>Below <strong>72°</strong>, GRID uses the regular fixed subdivision rules.</p>
+<p>At and above <strong>72°</strong>, it uses P1.</p>
+<p>The boundary is a design decision responding to the physical behaviour of the regular geometry; it is not a natural law embedded in Mars. The advantage of making the transition explicit is that the system has two clear regimes rather than a long zone in which its rules gradually become conditional.</p>
+<p>The price is a discontinuity.</p>
+<p>A Click immediately above 72° can have materially different physical dimensions from one immediately below because the optimisation objective changes suddenly. Regular GRID is still preserving fixed angular subdivision; Polar GRID has started protecting physical proportion through adaptive branching.</p>
+<p>That seam is real.</p>
+<p>GRID could have smoothed it by beginning adaptation farther from the pole or redesigning the entire global tessellation. Either choice would spread additional geometric machinery across more of the planet simply to make one transition look less abrupt.</p>
+<p>For this design, the cleaner trade is the explicit seam:</p>
+<p><strong>below 72° — regular<br/>at and above 72° — adaptive</strong></p>
+<p>The boundary is slightly inelegant.</p>
+<p>The rule is exceptionally clear.</p>
+<h2>The apex</h2>
+<p>There is one place P1 cannot rescue.</p>
+<p>At exactly 90°, every meridian still reaches the same physical point. No choice of longitude branching can produce an ordinary four-sided cell that remains well proportioned all the way to the apex.</p>
+<p>The final Click lineage therefore narrows to a singular point.</p>
+<p>Chapter 12 already resolved the identity problem by canonicalising the exact pole into one defined lineage. P1 deals with the geometry approaching it.</p>
+<p>For almost the entire polar cap, adaptive branching can control the deterioration in cell shape.</p>
+<p>At the final apex, topology wins.</p>
+<p>That is not something the standard needs to disguise. A global geography has to represent the actual planet, including the two points where ordinary longitude geometry genuinely ends.</p>
+<p>The purpose of P1 is not to abolish that fact.</p>
+<p>It is to stop the singularity from ruining the geography around it.</p>
+<h2>Local complexity protects global simplicity</h2>
+<p>P1 changes surprisingly little.</p>
+<p>The coordinate system stays.</p>
+<p>The hierarchy stays.</p>
+<p>The latitude increments stay.</p>
+<p>The identifier grammar stays.</p>
+<p>What changes is the number of east–west children created inside a parent when the regular branching would produce a poor physical result.</p>
+<p>That small local freedom brings costs: variable branching, T-junctions, more complicated adjacency, an explicit 72° seam and one unavoidable apex singularity. Those costs are contained inside the part of Mars that creates them.</p>
+<p>The alternative would be to make the whole planetary system more sophisticated so that the poles could be handled without an exception.</p>
+<p>P1 takes the opposite view.</p>
+<p>Let most of Mars remain simple.</p>
+<p>Allow the awkward geometry to become more complicated where it has earned the complication.</p>
+<p>That is the architectural principle this chapter is really about:</p>
+<p><strong>Local complexity protects global simplicity.</strong></p>
+<p>Regular GRID works because its rule is simple.</p>
+<p>Polar GRID works because it knows when not to insist on it.</p></div><nav aria-label="Reading order" class="next-prev"><a href="chapter-12.html">← A Place That Stays Put</a><a href="chapter-14.html">A Kilometre Is Not an Address →</a></nav></article></main></div><footer class="imprint">© JB Bullock 2026. All rights reserved. Book text and artwork are not licensed under the technical specification or software licences. · <a href="index.html">Book contents</a></footer></body></html>

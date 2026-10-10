@@ -1,0 +1,7 @@
+© 2026 JB Bullock. Matlas — Open Technical Overview. Initial Public Issue 1.0, October 2026.
+
+The author's original content in this standalone informative Matlas companion publication is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+Attribution should identify JB Bullock / Jonathan Bullock, the title, published version, and the source publication and indicate any changes. This licence does not cover the separately copyrighted Matlas book, its 97 selected illustrations, unlicensed third-party material, or unpublished normative MRR-1, BAR-geodetic or production Triplet components.
+
+Standalone MGRID normative rights are not amended by this companion release.

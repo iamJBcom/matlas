@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>From Proposal to Infrastructure — Matlas</title><meta content="Open Standards, Stewardship and Adoption" name="description"/><link href="../assets/book.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "From Proposal to Infrastructure", "isPartOf": {"@type": "Book", "name": "Matlas: An Operational Map of Human Mars", "author": {"@type": "Person", "name": "JB Bullock"}}, "inLanguage": "en", "copyrightHolder": "JB Bullock", "copyrightYear": 2026, "creativeWorkStatus": "First Public Web Edition 1.0 · October 2026"}</script><link rel="canonical" href="https://iamjbcom.github.io/matlas/book/chapter-21.html"/><meta property="og:url" content="https://iamjbcom.github.io/matlas/book/chapter-21.html"/><meta property="og:type" content="article"/></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="top"><a class="brand" href="index.html">MATLAS</a><span class="preview-pill">FIRST PUBLIC WEB EDITION</span><span class="minor">Operating Architecture · JB Bullock</span></header><div class="layout"><nav aria-label="Mobile book contents" class="mobile-chapters"><details><summary>Contents — jump to a chapter</summary><nav aria-label="Chapters, mobile menu" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="page" class="toc-item selected" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></details></nav><aside class="sidebar"><nav aria-label="Book chapters" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="false" class="toc-item" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="page" class="toc-item selected" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></aside><main class="main" id="content"><article class="article"><div class="eyebrow">Chapter 21 · Part 5</div><h1>From Proposal to Infrastructure</h1><p class="dek">Open Standards, Stewardship and Adoption</p><div class="prose"><p>A book can propose a geography. It cannot make one real.</p>
+<p>Even a technically complete design remains mostly an intellectual object until other people can implement it, test it, build software around it and trust that an identifier created today will still mean the same thing years later. Infrastructure begins when the design stops depending on its designer being present to explain it.</p>
+<p>That is the final operating problem for Matlas.</p>
+<p>GRID can divide Mars. BAR can address the last few metres. Triplet can provide a human interface. None of that by itself creates infrastructure. The remaining work is more prosaic: specifications, software, tests, datasets, version histories and somebody willing to maintain them for longer than anybody finds particularly exciting.</p>
+<p>That is usually where standards become useful.</p>
+<h2>The book is not the standard</h2>
+<p>This book has been allowed to explain judgement.</p>
+<p>Why place a persistent civil layer between coordinates and culture? Why use several scales? Why stop GRID at Click? Why change the geometry at high latitude? Why put BAR beneath GRID? Why separate the machine identity from the human interface? Those questions need reasoning.</p>
+<p>A specification has a different job. It must remove judgement from implementation wherever two systems need the same answer. Which unit owns a point? Which reference realisation applies? How is an identifier constructed? What happens on a boundary or at the pole? Which outputs are conforming?</p>
+<p>There is little benefit in elegant ambiguity when two computers are trying to agree about where something is.</p>
+<p>The division of labour is simple:</p>
+<p><strong>The book explains and argues. The specification defines.</strong></p>
+<p>Matlas therefore needs normative documents separate from the narrative. If somebody wants to understand <em>why</em> the architecture looks this way, the book should help. If somebody wants to build it, the specification should win every argument.</p>
+<h2>Publish enough to reproduce it</h2>
+<p>The first practical requirement is openness, but openness needs to mean more than putting a PDF online.</p>
+<p>The normative GRID and BAR specifications should be publicly available. So should the algorithms required to reproduce the geometry, the reference assumptions behind them and the rules that determine canonical identity. Then publish enough evidence for somebody else to check their work.</p>
+<p>Reference implementations matter because prose can conceal ambiguity surprisingly well. Working code eventually has to choose what the words mean. Conformance tests matter even more: an independent implementation should be able to run known coordinates, exact boundaries, polar cases and canonical identifiers and compare its output against published reference results.</p>
+<p>The same principle should extend to BAR and, where behaviour is normative, to Triplet and M3B profiles.</p>
+<p>The objective is not to make everyone use the reference software. Quite the opposite. A strong open standard should make it possible to replace the reference software.</p>
+<p>If the original code becomes obsolete, another organisation should be able to write a new implementation from the specification and prove that it behaves correctly. Reference code demonstrates one valid implementation; it does not become the geography.</p>
+<p>That is the difference between a protocol and a product.</p>
+<p>Conformance should also be cheap. A developer should not have to submit an implementation to a committee and wait several months to discover whether their boundary arithmetic works. Run the published suite. Compare the results. Investigate the failures.</p>
+<p>Certification may later matter for safety-critical systems, but protocol correctness should mostly be mechanical. That lowers the cost of independent implementations, and independent implementations are one of the best defences against a supposed open standard quietly becoming dependent on one piece of software.</p>
+<h2>APIs are doors, not foundations</h2>
+<p>There should nevertheless be APIs.</p>
+<p>A mapping application should be able to submit a coordinate and receive its GRID identity. A logistics platform should be able to resolve a BAR address. A planning tool should be able to request the geometry of a Tile or Click. A Triplet service should be able to encode and decode supported language profiles.</p>
+<p>Those interfaces could make Matlas dramatically easier to use. They should not make the service authoritative.</p>
+<p>An API can fail, change ownership, become expensive, disappear or simply develop a bug. Mars also seems an unnecessarily ambitious place to assume permanent network access.</p>
+<p>So the relationship should be:</p>
+<p><strong>The API should make Matlas easy. The specification should make the API unnecessary.</strong></p>
+<p>The same principle applies to libraries, command-line tools, plug-ins and applications. Good software should hide most of the machinery we spent Chapters 9–18 exposing. A GIS can make GRID another selectable layer. A logistics application can store BAR identities without showing them to the person ordering a delivery. A scientific archive can add GRID references automatically.</p>
+<p>If integrating Matlas requires reading this entire book, adoption has gone wrong.</p><figure aria-label="Figure 22: From Proposal to Infrastructure" class="book-figure" id="figure-22"><img alt="Stages of proposing, validating, publishing and adopting common Martian spatial infrastructure." aria-describedby="figure-22-description" decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/image6.webp" width="1200"/><figcaption><span class="figure-id">Figure 22</span> · From Proposal to Infrastructure</figcaption><details class="figure-description"><summary>Read a description of this illustration</summary><p id="figure-22-description">The illustration traces the proposed process of converting an architecture into infrastructure by documenting, validating, releasing, implementing and governing its shared rules.</p></details></figure>
+<p>Libraries, schemas and documentation all matter. Boring integration work is often what separates a standard people admire from one people actually use.</p>
+<h2>Connect to the Mars we already have</h2>
+<p>One companion resource would be particularly useful because Matlas is not beginning on a nameless planet. Mars already has recognised planetary nomenclature, and Matlas should connect to it rather than absorb it.</p>
+<p>The practical answer is a <strong>Matlas Gazetteer Crosswalk</strong>: a machine-readable bridge between recognised named features and the Matlas geometry beneath them.</p>
+<p>For recognised IAU planetary nomenclature, the public resource could include an <strong>IAU/Matlas Nomenclature Crosswalk</strong>. The wording matters: this would be a Matlas cross-reference <strong>to</strong> recognised IAU nomenclature, not an IAU-produced Matlas standard or evidence of institutional endorsement.</p>
+<p>Its purpose is straightforward. Search for a recognised feature and see which Matlas units contain or intersect it. Search a GRID unit and see which recognised features intersect that area. Where authoritative source information permits, the crosswalk can preserve the recognised name, feature type, coordinate or mapped extent and calculate the corresponding Matlas intersections.</p>
+<p>Nothing is being renamed, and a feature boundary does not become a GRID boundary. The crosswalk simply prevents every GIS, archive and mapping project from having to repeat the same spatial join independently.</p>
+<p>Keeping the dataset separate from canonical Matlas geometry also lets it evolve safely. New recognised names can be added. Source geometry can improve. Crosswalk calculations can be corrected.</p>
+<p>None of that moves a Click.</p>
+<p>The resource should also resist the temptation to become its own nomenclature authority. Source names remain attributed to their source. Matlas intersections remain calculated cross-references. Local or unofficial names can live in other datasets.</p>
+<p>The purpose is connection, not annexation.</p>
+<p>The durable asset should also be the structured data, not a pretty website. Researchers should be able to download it. GIS software should be able to ingest it. Future archives should be able to preserve it.</p>
+<p>Interfaces age. Data lasts longer. Specifications should last longer still.</p>
+<h2>Versioning is historical integrity</h2>
+<p>Once other organisations begin storing Matlas identifiers, version numbers stop being software housekeeping. They become part of the meaning of old records.</p>
+<p>We already have the essential principle in <strong>MGRID:1:MARS</strong>. The major geometry version identifies the rules under which that spatial identity was created. If a later change alters which identifier belongs to a physical coordinate, the geography itself has changed. That deserves a new major geometry version.</p>
+<p>Many other changes do not. A corrected implementation bug does not mean Mars has been regridded. Neither does a better website, a new API, another Triplet profile or an updated nomenclature crosswalk.</p>
+<p>Different artefacts therefore need separate histories. Geometry versions track canonical spatial meaning. Software versions track implementations. Language-profile versions track lexical mappings. Dataset releases track companion data. One giant version number would hide those distinctions rather than simplify them.</p>
+<p>The deeper reason is archival continuity.</p>
+<p>Imagine opening a maintenance record a century after it was written. The software that created it is gone. The company has disappeared. Local names have changed. Scientific reference models have improved.</p>
+<p>The old Matlas identifier should still be interpretable.</p>
+<p>That means old specifications must remain available rather than merely replaced. Historical conformance cases should remain preserved. Deprecated lexical profiles may need archiving. Reference transformations need provenance.</p>
+<p>Apps are allowed to forget old releases. Civil infrastructure cannot.</p>
+<p>Persistent identity is only useful if the history required to interpret that identity persists as well.</p>
+<h2>Adoption starts with use</h2>
+<p>A standard does not become infrastructure because somebody declares it one, nor does it require planet-wide adoption on the first day. Early credibility comes from much smaller things.</p>
+<p>Someone builds a second implementation and obtains the same answers. A GIS project uses GRID alongside existing Mars layers. A settlement simulation uses BAR addresses for logistics. A research archive stores persistent GRID references with observations. A planning tool finds that the hierarchy reduces rather than adds friction.</p>
+<p>Those uses expose different weaknesses from design work. Documentation that looked clear turns out not to be. An API lacks an obvious function. A hierarchy label is misunderstood. A test vector catches an implementation assumption. Something everybody thought important proves irrelevant in practice.</p>
+<p>That feedback is valuable precisely because it comes from use rather than endorsement.</p>
+<p>Most of it should not change the canonical architecture. Some improves documentation. Some improves software. Some belongs in a companion dataset. Some suggests an optional extension. Occasionally enough evidence may accumulate to justify a future normative change.</p>
+<p>That is why adoption belongs in the lifecycle rather than after it.</p>
+<p>Infrastructure becomes credible by surviving implementation.</p>
+<h2>Steward the protocol, not everything around it</h2>
+<p>Once several organisations rely on Matlas, maintenance decisions become unavoidable.</p>
+<p>An ambiguity is discovered in the specification. Two implementations disagree. A reference transformation needs updating. A language-profile identifier collides. Somebody proposes an extension that would alter canonical behaviour. There needs to be an orderly way to deal with those cases.</p>
+<p>The mandate can remain narrow: maintain the normative specifications; publish version and change histories; preserve old releases; maintain conformance material; coordinate technical registries and reference transformations where necessary; and provide a visible process for proposing and reviewing changes.</p>
+<p>That is stewardship.</p>
+<p>It does not require the Matlas steward to administer property, political borders, cultural names or settlements. Chapter 20 has already shown why those layers should remain richer and freer than the reference underneath them.</p>
+<p>A standard also needs the ability to resist scope creep. Once a useful common layer exists, perfectly reasonable suggestions will appear: add altitude, buildings, ownership, roads, environmental status, resource licences, preferred names, perhaps half the administrative machinery of civilisation before lunch.</p>
+<p>Many of those ideas may deserve systems of their own.</p>
+<p>The correct answer can still be:</p>
+<p><strong>Yes — but not here.</strong></p>
+<p>Build an overlay. Create a companion dataset. Experiment with an extension. Leave the canonical core alone unless the benefit of changing it outweighs the cost imposed on everyone already using it.</p>
+<p>Good stewardship is partly maintenance and partly refusal.</p>
+<h2>Build it so somebody else can run it</h2>
+<p>The final practical test is simple.</p>
+<p>Imagine the original Matlas project disappears. Can another organisation obtain the specifications and reconstruct the geometry? Can it decode an old address, write a new implementation and determine which version an historical record used? Can it verify that implementation against public conformance cases? Can it preserve or replace the public services without gaining access to private databases or proprietary secrets?</p>
+<p>If the answer is yes, the architecture has a chance of becoming infrastructure. If the answer is no, it remains somebody’s platform.</p>
+<p>That applies to authorship as well.</p>
+<p>I can propose Matlas, explain the design, publish the first normative documents, release reference software and maintain the initial public resources. That is a sensible starting role. It should not be a permanent technical dependency.</p>
+<p>If Matlas ever attracts serious use, stewardship should broaden to people and organisations with better operational knowledge than the original author can possibly have: geospatial specialists, scientists, software engineers, settlement operators, linguists and eventually people with direct experience of using the system in the environment it was designed for.</p>
+<p>There is no need to choose the final institution now. What matters is making transfer technically possible.</p>
+<p>Keep the specifications public. Keep the data exportable. Preserve version history. Avoid hidden dependencies. Document enough that another competent group can take over.</p>
+<p>If a spatial standard intended to survive for generations contains an implicit requirement that its inventor remain available, competent and agreeable throughout, it has acquired an impressively avoidable single point of failure.</p>
+<p>The objective is not to preserve authorship. It is to preserve the infrastructure.</p>
+<p><strong>A proposal can have an author. Infrastructure needs successors.</strong></p></div><nav aria-label="Reading order" class="next-prev"><a href="chapter-20.html">← Names, Borders and Memory</a><a href="chapter-22.html">Home Is Not a Coordinate →</a></nav></article></main></div><footer class="imprint">© JB Bullock 2026. All rights reserved. Book text and artwork are not licensed under the technical specification or software licences. · <a href="index.html">Book contents</a></footer></body></html>

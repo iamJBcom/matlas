@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>A Place in 44 Bits — Matlas</title><meta content="The Canonical Bar Identity" name="description"/><link href="../assets/book.css" rel="stylesheet"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Chapter", "name": "A Place in 44 Bits", "isPartOf": {"@type": "Book", "name": "Matlas: An Operational Map of Human Mars", "author": {"@type": "Person", "name": "JB Bullock"}}, "inLanguage": "en", "copyrightHolder": "JB Bullock", "copyrightYear": 2026, "creativeWorkStatus": "First Public Web Edition 1.0 · October 2026"}</script><link rel="canonical" href="https://iamjbcom.github.io/matlas/book/chapter-16.html"/><meta property="og:url" content="https://iamjbcom.github.io/matlas/book/chapter-16.html"/><meta property="og:type" content="article"/></head><body><a class="skip-link" href="#content">Skip to main content</a><header class="top"><a class="brand" href="index.html">MATLAS</a><span class="preview-pill">FIRST PUBLIC WEB EDITION</span><span class="minor">Operating Architecture · JB Bullock</span></header><div class="layout"><nav aria-label="Mobile book contents" class="mobile-chapters"><details><summary>Contents — jump to a chapter</summary><nav aria-label="Chapters, mobile menu" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="page" class="toc-item selected" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></details></nav><aside class="sidebar"><nav aria-label="Book chapters" class="toc">
+<a class="toc-home" href="index.html">Overview</a>
+<a class="toc-item" href="preface.html">Preface</a>
+<div class="toc-group"><a href="part-1.html">Part 1 · A PLANET ALREADY MAPPED</a></div>
+<a aria-current="false" class="toc-item" href="chapter-01.html">1. Mars Is Not Blank</a>
+<a aria-current="false" class="toc-item" href="chapter-02.html">2. Why Earth Does Not Run on Coordinates</a>
+<div class="toc-group"><a href="part-2.html">Part 2 · WHEN EXPLORATION BECOMES SETTLEMENT</a></div>
+<a aria-current="false" class="toc-item" href="chapter-03.html">3. The First Two Centuries</a>
+<a aria-current="false" class="toc-item" href="chapter-04.html">4. Twelve Jobs for Martian Geography</a>
+<a aria-current="false" class="toc-item" href="chapter-05.html">5. Ten Rules for an Operating Geography</a>
+<a class="toc-item toc-interlude" href="interlude-baseline.html">Do We Need Another System?</a>
+<a aria-current="false" class="toc-item" href="chapter-06.html">6. Start With the Planet</a>
+<a aria-current="false" class="toc-item" href="chapter-07.html">7. How Big Is a Place?</a>
+<a aria-current="false" class="toc-item" href="chapter-08.html">8. The Planet Is Round. The Grid Is Not.</a>
+<div class="toc-group"><a href="part-3.html">Part 3 · THE MARS GRID</a></div>
+<a aria-current="false" class="toc-item" href="chapter-09.html">9. The Mars Grid in One Page</a>
+<a aria-current="false" class="toc-item" href="chapter-10.html">10. Twenty-Six Pieces of Mars</a><a class="toc-item toc-interlude" href="interlude-map-room.html">The Map Room</a>
+<a aria-current="false" class="toc-item" href="chapter-11.html">11. From Zand to Click</a>
+<a aria-current="false" class="toc-item" href="chapter-12.html">12. A Place That Stays Put</a>
+<a aria-current="false" class="toc-item" href="chapter-13.html">13. Where the Grid Bends</a>
+<div class="toc-group"><a href="part-4.html">Part 4 · THE MARS BAR</a></div>
+<a aria-current="false" class="toc-item" href="chapter-14.html">14. A Kilometre Is Not an Address</a>
+<a aria-current="false" class="toc-item" href="chapter-15.html">15. From Click to Cell</a>
+<a aria-current="page" class="toc-item selected" href="chapter-16.html">16. A Place in 44 Bits</a>
+<a aria-current="false" class="toc-item" href="chapter-17.html">17. Three Words for Mars</a>
+<div class="toc-group"><a href="part-5.html">Part 5 · A GEOGRAPHY MARTIANS CAN OWN</a></div>
+<a aria-current="false" class="toc-item" href="chapter-18.html">18. What Matlas Gives Up</a>
+<a aria-current="false" class="toc-item" href="chapter-19.html">19. When the Grid Disappears</a>
+<a aria-current="false" class="toc-item" href="chapter-20.html">20. Names, Borders and Memory</a>
+<a aria-current="false" class="toc-item" href="chapter-21.html">21. From Proposal to Infrastructure</a>
+<a aria-current="false" class="toc-item" href="chapter-22.html">22. Home Is Not a Coordinate</a><div class="toc-group"><span>APPENDICES</span></div><a class="toc-item toc-appendix" href="appendix-a.html">A. Matlas at a Glance</a><a class="toc-item toc-appendix" href="appendix-b.html">B. The Mars Surface: Zones &amp; Bands</a><a class="toc-item toc-appendix" href="appendix-c.html">C. The Twenty Six Quads</a><a class="toc-item toc-appendix" href="appendix-d.html">D. The Matlas Design Brief</a><a class="toc-item toc-appendix" href="appendix-e.html">E. MGRID:1:MARS — Technical Reference</a><a class="toc-item toc-appendix" href="appendix-f.html">F. Polar GRID — Geometry and Rules</a><a class="toc-item toc-appendix" href="appendix-g.html">G. Mars BAR — Address Reference</a><a class="toc-item toc-appendix" href="appendix-h.html">H. Triplet and M3B — Language Reference</a><a class="toc-item toc-appendix" href="appendix-i.html">I. Interoperability and Implementation</a>
+</nav></aside><main class="main" id="content"><article class="article"><div class="eyebrow">Chapter 16 · Part 4</div><h1>A Place in 44 Bits</h1><p class="dek">The Canonical Bar Identity</p><div class="prose"><p>At the end of the last chapter we had geometry.</p>
+<p>Every GRID Click contains 256 Courts. Every Court contains 256 Cells. The result is nearly 12.7 trillion few-metre patches covering the surface of Mars, all derived from rules rather than stored in a planetary catalogue.</p>
+<p>That is enough to answer the physical question. It is not yet a very convenient address.</p>
+<p>We could identify a Cell by writing out its complete GRID path and then appending the Court row, Court column, Cell row and Cell column. The result would be exact, understandable and rather longer than most software needs every time it wants to say <em>this place</em>.</p>
+<p>Bar therefore needs another representation underneath the human interfaces we will meet later: a compact canonical identity.</p>
+<h2>The hierarchy is not the machine code</h2>
+<p>The GRID address path is valuable partly because it exposes structure.</p>
+<p>A full Click reference tells us which Quad contains which Zand, Province, Sector, Tile and Click. A human can move up the hierarchy simply by stopping earlier in the path, while software can recover the same containment relationships explicitly.</p>
+<p>That is excellent for geography. It is unnecessarily verbose for many machine transactions.</p>
+<p>Imagine a maintenance database containing several million assets. Each record may need a fine location. A logistics system may exchange thousands of destinations. Autonomous systems may compare, store and transmit locations continuously. In those contexts, repeatedly carrying the full civil hierarchy is rather like writing somebody's entire postal address every time a database wants to remember which house they live in.</p>
+<p>The underlying structure should remain recoverable, but the representation does not have to repeat it in full.</p>
+<p>Bar therefore separates two ideas:</p>
+<p><strong>the hierarchical geographic reference</strong>, which is useful for explanation and context;</p>
+<p>and:</p>
+<p><strong>the canonical machine identity</strong>, which is useful for storage, exchange and computation.</p>
+<p>They refer to exactly the same place.</p>
+<h2>Start with the Click</h2>
+<p>A Bar Cell always belongs to one GRID Click.</p>
+<p>There are <strong>193,557,552 Clicks</strong> in MGRID:1:MARS. That number is large, but binary arithmetic is not easily intimidated.</p>
+<p>Twenty-seven bits would be insufficient because:</p>
+<p><strong>2²⁷ = 134,217,728</strong></p>
+<p>Twenty-eight bits provide:</p>
+<p><strong>2²⁸ = 268,435,456</strong></p>
+<p>possible values, comfortably enough to assign every GRID Click one deterministic global ordinal.</p>
+<p>The word <em>ordinal</em> matters. Bar is not inventing 193 million arbitrary entries in a lookup table; the ordinal is derived from the frozen GRID architecture and its defined ordering. Given a valid Click path, a conforming implementation can calculate the corresponding Click ordinal. Given the ordinal, it can recover the Click.</p>
+<p>The ordinal is therefore a compact representation of something GRID already knows. It does not replace the hierarchy.</p>
+<h2>One byte for the Court</h2>
+<p>Inside the Click, the problem becomes much smaller.</p>
+<p>There are sixteen Court rows and sixteen Court columns:</p>
+<p><strong>16 × 16 = 256 Courts</strong></p>
+<p>Two hundred and fifty-six possibilities fit exactly into eight bits:</p>
+<p><strong>2⁸ = 256</strong></p>
+<p>so one byte can contain the complete Court position.</p>
+<p>The neat part is that the geometry already divides naturally into two four-bit values. A Court row runs from 0 to 15, as does a Court column. Four bits describe sixteen possibilities, so the byte can be understood as:</p>
+<p><strong>4 bits Court row + 4 bits Court column</strong></p>
+<p>The numerical Court value can therefore be constructed directly from its two-dimensional position:</p>
+<p><strong>Court value = 16 × row + column</strong></p>
+<p>Court row 0, column 0 becomes the first value. Court row 15, column 15 becomes the last.</p>
+<p>Nothing has been looked up. The geometry has simply been packed.</p>
+<h2>Another byte for the Cell</h2>
+<p>The Cell uses the same trick again.</p>
+<p>Each Court contains sixteen Cell rows and sixteen Cell columns, giving another 256 possibilities. Cell therefore also needs exactly eight bits:</p>
+<p><strong>4 bits Cell row + 4 bits Cell column</strong></p>
+<p>and:</p>
+<p><strong>Cell value = 16 × row + column</strong></p>
+<p>The two Bar subdivisions consume one byte each. The whole Cell identity becomes:</p>
+<div class="table-scroll"><table><thead>
+<tr><th scope="col"><p><strong>Component</strong></p></th><th scope="col"><p><strong>Bits</strong></p></th></tr></thead><tbody>
+<tr><td><p>Global GRID Click ordinal</p></td><td><p>28</p></td></tr>
+<tr><td><p>Court</p></td><td><p>8</p></td></tr>
+<tr><td><p>Cell</p></td><td><p>8</p></td></tr>
+<tr><td><p><strong>Total</strong></p></td><td><p><strong>44</strong></p></td></tr>
+</tbody></table></div>
+<p>Forty-four bits are enough to identify every Bar Cell on Mars.</p>
+<p>That is the canonical core.</p>
+<h2>What forty-four bits buys us</h2>
+<p>Forty-four bits provide:</p>
+<p><strong>17,592,186,044,416</strong></p>
+<p>possible binary values.</p>
+<p>Bar currently uses:</p>
+<p><strong>12,684,987,727,872</strong></p>
+<p>of them for the actual Cells created by MGRID:1:MARS.</p>
+<p>The unused numerical space is not evidence that the design is wasteful. Binary fields are chosen because they align cleanly with the geometry and remain simple to encode and decode. Trying to squeeze every theoretically unused value out of the representation would save a few bits at the cost of making the structure less transparent.</p>
+<p>Forty-four bits is already small: five and a half bytes of information. In many software systems it will be convenient to store the value inside a standard 64-bit integer, although that storage choice does not alter the canonical 44-bit location payload.</p><figure aria-label="Figure 17: Anatomy of a BAR Address" class="book-figure" id="figure-17"><img alt="Flow diagram from an MGRID Click and Court/Cell to a compact 44-bit BAR machine identity, then back to surface bounds." aria-describedby="figure-17-description" decoding="async" loading="lazy" sizes="(max-width: 830px) calc(100vw - 44px), 752px" src="../assets/images/image14.webp" width="1200"/><figcaption><span class="figure-id">Figure 17</span> · Anatomy of a BAR Address</figcaption><aside aria-label="Figure 17 editorial note" class="figure-note" role="note"><strong>Illustration note</strong><span> — The graphic retains old provisional wording. The 28-bit Click, 36-bit Court and 44-bit Cell formats are now author-ratified.</span></aside><details class="figure-description"><summary>Read a description of this illustration</summary><p id="figure-17-description">The valid binary structure contains 28 bits of Click ordinal, eight bits of Court index and eight bits of Cell index. This original graphic retains obsolete provisional wording, so the corrected illustration must match ratified BAR:1:MARS.</p></details></figure>
+<p>The important point is not whether a developer stores six bytes, eight bytes or some textual rendering in a database.</p>
+<p><strong>Storage format is implementation. Identity is protocol.</strong></p>
+<h2>The same bits can still be understood spatially</h2>
+<p>Compactness has not destroyed the geometry.</p>
+<p>Take the final sixteen bits. The first eight identify the Court; split them into two four-bit values and we recover Court row and Court column. Do the same to the final byte and we recover Cell row and Cell column.</p>
+<p>Those four values can also reconstruct the fine-grid coordinates introduced in the last chapter:</p>
+<p><strong>fine row = 16 × Court row + Cell row</strong></p>
+<p><strong>fine column = 16 × Court column + Cell column</strong></p>
+<p>Both run from 0 to 255.</p>
+<p>The lower sixteen bits therefore identify one location inside the Click's 256 × 256 fine grid. The upper twenty-eight bits identify which Click that fine grid belongs to.</p>
+<p>This makes the code compact without making it opaque. A conforming implementation can take the bits apart and recover the same spatial structure that created them.</p>
+<h2>Coordinate to Bar</h2>
+<p>The forward conversion begins with a position expressed in the reference system used by MGRID:1:MARS.</p>
+<p>GRID does the first part. It determines the unique Click containing the coordinate, using the ordinary regular geometry or P1 where required. Exact boundaries follow the ownership rules already established earlier in the book.</p>
+<p>Once the Click is known, Bar does not need to know anything else about the planet. It takes the coordinate's position inside that Click and determines the Court row and column, then the Cell row and column inside that Court.</p>
+<p>The resulting values are packed into:</p>
+<p><strong>Click ordinal + Court byte + Cell byte</strong></p>
+<p>and the canonical 44-bit identity is complete.</p>
+<p>The flow is therefore:</p>
+<p><strong>coordinate → Click → Court → Cell → Bar identity</strong></p>
+<p>That sequence is deliberately boring. There should be no database search, no nearest-address query and no request to a remote service asking which identifier has been allocated to the location.</p>
+<p>The answer follows from the rules.</p>
+<h2>Bar back to geography</h2>
+<p>The reverse operation matters just as much.</p>
+<p>Suppose a rover receives a Bar identity rather than a coordinate. The first twenty-eight bits identify the GRID Click, the next eight identify the Court and the final eight identify the Cell.</p>
+<p>From the Click ordinal, the implementation reconstructs the corresponding GRID Click and therefore its angular bounds. That parent Click may be regular or polar; the Bar decoder does not have to guess which, because GRID's own inverse logic reconstructs the actual geometry.</p>
+<p>The Court byte then selects one sixteenth-by-sixteenth portion of that Click. The Cell byte selects one sixteenth-by-sixteenth portion of the Court.</p>
+<p>The result is the unique angular bounds of the addressed Cell:</p>
+<p><strong>Bar identity → Click → Court → Cell bounds</strong></p>
+<p>A representative coordinate can then be calculated inside those bounds if some downstream system wants one.</p>
+<p>This distinction is useful. The Bar identity fundamentally refers to the <strong>Cell</strong>, not to one privileged point at its centre. A mapping application may display a centre point. A vehicle may navigate towards one. Another system may choose an entrance or safe stopping position inside the Cell.</p>
+<p>Those are application decisions. The canonical address is the small area itself.</p>
+<h2>Why reversibility matters</h2>
+<p>A system can produce unique identifiers without being reversible.</p>
+<p>Take every Cell on Mars, assign it a random number and store the mapping in a database. Provided nobody accidentally reuses a number, the identifiers would be unique.</p>
+<p>They would also be dependent on the database forever. Without the allocation table, the number would tell you nothing about where the Cell was.</p>
+<p>Bar takes the opposite approach: <strong>the location creates the identity</strong>.</p>
+<p>That means the identity contains enough structured information, together with the public protocol, to reconstruct the location without consulting the organisation that first generated it. This is one of the most important differences between a portable infrastructure standard and a service-controlled location key.</p>
+<p>The goal is not merely:</p>
+<p><strong>unique</strong></p>
+<p>It is:</p>
+<p><strong>unique, deterministic and reversible</strong></p>
+<p>Those extra words change the institutional architecture of the system.</p>
+<h2>No registry required</h2>
+<p>Mars will have registries. There will be excellent reasons to maintain directories of settlements, buildings, infrastructure, scientific sites, land interests and millions of other things future inhabitants decide are worth recording.</p>
+<p>Bar does not need to become one of them.</p>
+<p>No authority has to issue the next Cell number, and nobody needs to reserve an address before using it. Two organisations can independently calculate the Bar identity of the same location and obtain the same result without first exchanging records.</p>
+<p>That property becomes particularly valuable at planetary scale.</p>
+<p>Imagine two research teams visiting the same remote instrument years apart. One records its Bar identity. The second arrives with no access to the first team's original software but does have the public protocol. The old identifier remains meaningful because the meaning was never trapped inside the first team's database.</p>
+<p>Or imagine a settlement company disappears. Its maps may vanish, its software may stop being maintained and its servers may be turned off.</p>
+<p><strong>The surface of Mars should not respond by changing address.</strong></p>
+<h2>Offline means more than cached</h2>
+<p>The phrase <strong>offline addressing</strong> can mean several different things.</p>
+<p>At the weakest level, an application downloads a large proprietary database in advance and consults the cached copy when connectivity disappears. That is certainly useful, but the system still depends on obtaining and maintaining the database.</p>
+<p>Bar's aim is stronger: a conforming implementation should be able to compute the address from the specification itself.</p>
+<p>For the core machine identity, the required knowledge is modest:</p>
+<p>the appropriate Matlas and Bar protocol version;</p>
+<p>the MGRID:1:MARS rules;</p>
+<p>the relevant reference-realisation definition;</p>
+<p>the Bar subdivision and encoding rules.</p>
+<p>With those in hand, the location can be calculated locally.</p>
+<p>The software may still carry tables or precomputed indexes because engineers enjoy making fast things faster. That is an implementation choice. The meaning of the address does not depend on them.</p>
+<p>Mars is a useful environment in which to be suspicious of hidden network assumptions. A remote rover, habitat or field team may periodically have rather more important problems than whether the central address service is responding.</p>
+<p>Infrastructure should degrade gracefully.</p>
+<h2>Determinism has an unfashionable requirement</h2>
+<p>If two implementations receive the same valid coordinate under the same protocol version, they must produce the same Bar identity.</p>
+<p>Not approximately the same.</p>
+<p>Not usually the same.</p>
+<p><strong>The same.</strong></p>
+<p>This requirement sounds obvious until numerical boundaries become involved.</p>
+<p>A coordinate that lies comfortably in the middle of a Cell is easy. A coordinate exactly on a Court boundary is more interesting. A coordinate exactly on a Cell boundary is more interesting again. Add the 72° GRID transition or the geographic poles and a careless implementation can discover several different meanings of <em>obvious</em>.</p>
+<p>Bar therefore inherits GRID's deterministic boundary semantics rather than inventing new ones. The mathematical interval owns the point according to the published rule, and implementations must reproduce that result rather than rely blindly on whatever rounding behaviour happens to emerge from a programming language's floating-point arithmetic.</p>
+<p>That is why conformance examples matter. Most users will never knowingly encounter an exact boundary; standards have to behave correctly there anyway.</p>
+<h2>Version is part of meaning</h2>
+<p>A persistent address needs one further piece of context: <strong>which rules created it</strong>.</p>
+<p>MGRID:1:MARS already carries a major geometry version because changing the geometry changes the meaning of an identifier. Bar requires the same discipline.</p>
+<p>A software update that makes conversion faster does not create a new geography. Neither does a corrected user interface or a new Triplet vocabulary.</p>
+<p>But if a future Bar version altered the subdivision, changed canonical boundary ownership or reassigned the machine identity of physical Cells, old addresses could no longer be interpreted safely under the new rules.</p>
+<p>That kind of change requires an explicit protocol version.</p>
+<p>The forty-four bits therefore identify the Cell <strong>within the relevant Mars Bar profile</strong>. External serialization and protocol framing must preserve enough version and body context to know how those bits are to be interpreted.</p>
+<p>The detailed wire format belongs in the specification rather than here. The principle belongs in the book:</p>
+<p><strong>Old addresses should never silently acquire new geography.</strong></p>
+<p>Persistent identity requires persistent rules.</p>
+<h2>Compact does not mean human-friendly</h2>
+<p>At this point we have something machines should like.</p>
+<p>A Bar identity is compact, deterministic, locally computable and locally decodable. It nests exactly into GRID and works in both the regular and polar regimes because the Click geometry comes from the same underlying system.</p>
+<p>It is also not something I particularly want shouted at me during an emergency.</p>
+<p>Forty-four bits can be written in binary, hexadecimal, decimal or some other machine-oriented notation. None of those representations suddenly turns into pleasant human conversation merely because the number is technically shorter than a coordinate pair.</p>
+<p>This is not a flaw. The machine identity was never asked to be charming.</p>
+<p>A mistake in many technical systems is to discover that the canonical code is inconvenient for people and then start weakening the canonical code until it becomes easier to read. That usually produces something which is neither especially elegant for machines nor especially memorable for humans.</p>
+<p>Matlas takes the opposite approach.</p>
+<p><strong>Let the machine layer be a machine layer. Then build a human interface deliberately.</strong></p>
+<h2>Two implementations should agree</h2>
+<p>There is a useful practical test for whether Bar has actually become a protocol.</p>
+<p>Write one implementation, then write another independently. Give both the same large set of inputs: ordinary coordinates, regular boundaries, Court boundaries, Cell boundaries, the ±72° transition, polar Clicks and the two exact poles.</p>
+<p>Ask each implementation for the canonical Bar identity, then reverse the process and ask each to reconstruct the corresponding Cell.</p>
+<p>If the answers differ, the specification is not yet finished.</p>
+<p>This is a stronger standard than showing that one reference implementation works correctly against itself. A program can be internally consistent while embodying assumptions the written protocol never stated.</p>
+<p>Independent reproduction forces ambiguity into the open.</p>
+<p>When the system is complete, the public technical release should contain the normative rules, reference implementation, conformance vectors and enough test material for another competent developer to reproduce the result without access to any private code or database.</p>
+<p>That work belongs in the technical repository.</p>
+<p>The book needs only the conclusion:</p>
+<p><strong>same place, same version, same Bar identity</strong></p>
+<h2>The address underneath the address</h2>
+<p>We can now see the shape of the full system more clearly.</p>
+<p>GRID provides persistent geographic context. Bar subdivides the final Click into a few-metre Cell. The canonical Bar identity records that Cell compactly in forty-four bits.</p>
+<p>None of this requires a street name, a building database or a live connection to an address provider. That makes the machine layer unusually durable.</p>
+<p>It also creates the next problem.</p>
+<p>A forty-four-bit identity may be perfect for a maintenance database and miserable for a human voice. People mishear digits, transpose characters and forget strings that machines find trivial. They speak with different accents and over imperfect radios. They also have an irritating habit of wanting an address they can actually remember long enough to use.</p>
+<p>So we now have the opposite challenge from the one that began Part IV.</p>
+<p>The location is exact. The identity is compact. The machinery works.</p>
+<p><strong>Now we have to make it speak.</strong></p>
+<p>That is the job of <strong>Triplet</strong>.</p></div><nav aria-label="Reading order" class="next-prev"><a href="chapter-15.html">← From Click to Cell</a><a href="chapter-17.html">Three Words for Mars →</a></nav></article></main></div><footer class="imprint">© JB Bullock 2026. All rights reserved. Book text and artwork are not licensed under the technical specification or software licences. · <a href="index.html">Book contents</a></footer></body></html>
